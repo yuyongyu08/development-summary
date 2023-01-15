@@ -59,7 +59,7 @@ Etag、Last-modified是http协议`响应字段`；If-None-Match、If-Modified-Si
 
 ### 三、总结
 
-<figure><img src="../../.gitbook/assets/http-cache-summary.png" alt=""><figcaption><p>浏览器缓存总结</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/http-cache-summary (1).png" alt=""><figcaption><p>浏览器缓存总结</p></figcaption></figure>
 
 
 
