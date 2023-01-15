@@ -32,11 +32,26 @@
 
 <figure><img src="../.gitbook/assets/mp-msg.png" alt=""><figcaption><p>微信小程序页面渲染</p></figcaption></figure>
 
+#### 4、渲染层和逻辑层是如何通信的？
 
+<figure><img src="../.gitbook/assets/mp-tx.png" alt=""><figcaption><p>渲染层和逻辑层通信过程</p></figcaption></figure>
 
+渲染层和逻辑层的通信通过**事件驱动**的方式由**微信客户端进行中转。**具体方式：
 
+1. 用户通过视图层的交互触发特定的事件 event
+2. 然后 event 通过native中转传递给逻辑层
+3. 逻辑层继而通过一系列的逻辑处理、数据请求、接口调用等行为，将所需要的数据 data加工好
+4. &#x20;数据 data通过native中转传递给渲染层
+5. 最后渲染层将 data 渲染为可视化的 UI（先进行数据diff，然后将差异进行渲染）
 
+#### 5、微信小程序的运行环境
 
+| 运行环境                 | 渲染层              | 逻辑层                       |
+| -------------------- | ---------------- | ------------------------- |
+| iOS、iPadOS 和 Mac OS  | WKWebView        | JavaScriptCore            |
+| Android              | XWeb             | v8                        |
+| Windows              | Chromium 内核      | Chromium 内核               |
+| 开发工具上                | Chromium Webview | [NW.js](https://nwjs.io/) |
 
 
 
