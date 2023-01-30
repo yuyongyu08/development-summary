@@ -78,7 +78,9 @@ npm3/yarn
 
 如上所示的packageX 2.0和packageY 2.0被重复安装多次
 
-### **三、pnpm（perfomance npm）时代**
+### **三、pnpm时代**
+
+pnpm（persistent npm），主要特点：依赖包的持久化
 
 > 原理图：&#x20;
 
@@ -86,8 +88,8 @@ npm3/yarn
 
 > 原理解释：
 
-* node\_modules下除了package.json中的依赖，还有一个.pnpm
-* .pnpm是个一个虚拟store（Virtual store），里面的依赖包`硬链接`到真实Store（Content-addressable store）中，那里是依赖包文件真正的存储位置
+* node\_modules下除了package.json中的依赖，还有一个.pnpm，所有的依赖包在.pnpm是平级结构，命名形式：包名@版本号
+* .pnpm是个一个虚拟store（Virtual store），里面的依赖包`硬链接`到真实Store（Content-addressable store）中，真实Store才是依赖包文件真正的存储位置
 * package.json中的依赖（比如express）通过`软链接`，指向.pnpm下对应的依赖包
 * 每次pnpm安装先检查Store，如果已经存在，直接通过硬链接的形式连接到.pnpm；如果不存在，则先下载，然后再硬链接过来
 
@@ -106,12 +108,12 @@ npm3/yarn
 
 <figure><img src="../.gitbook/assets/9082c195-ccf3-44d2-b08c-493cb94f89c1.png" alt=""><figcaption><p>软链接 vs 硬链接</p></figcaption></figure>
 
-* 硬链接：（指向目标文件的存储地址）
+* 硬链接：（**指向目标文件的存储地址**）
   * 与普通文件没什么不同，inode 都指向同一个文件在硬盘中的区块
   * 硬链接不管有多少个，都指向的是同一个 inode 节点，这意味着当你修改源文件或者链接文件的时候，都会做同步的修改
   * 每新建一个 hardlink 会把节点连接数增加，只要节点的链接数非零，文件就一直存在，不管你删除的是源文件还是 hradlink。
   * 只要有一个链接存在，文件就存在。
-* 软链接：（指向目标文件的引用）
+* 软链接：（**指向目标文件的引用**）
   * 保存了其代表的文件的绝对路径，是另外一种文件，在硬盘上有独立的区块，访问时替换自身路径
 
 参考：
