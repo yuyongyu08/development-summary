@@ -1,0 +1,6 @@
+---
+description: boolean
+---
+
+# boolean
+
