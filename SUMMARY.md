@@ -21,6 +21,7 @@
 * [前端基础](qian-duan-ji-chu/README.md)
   * [HTML](qian-duan-ji-chu/html/README.md)
     * [语义化标签](qian-duan-ji-chu/html/yu-yi-hua-biao-qian.md)
+    * [script标签中defer和async](qian-duan-ji-chu/html/script-biao-qian-zhong-defer-he-async.md)
     * [本地存储](qian-duan-ji-chu/html/ben-di-cun-chu.md)
     * [拖拽](qian-duan-ji-chu/html/tuo-zhuai.md)
     * [Web Workers](qian-duan-ji-chu/html/web-workers.md)
