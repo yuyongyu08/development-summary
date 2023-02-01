@@ -39,14 +39,16 @@ document.body.append(script);
 `document.readyState` 是文档的当前状态，可以使用`readystatechange`事件监听状态变化：
 
 ```javascript
- document.addEventListener("readystatechange", () => {
+document.addEventListener("readystatechange", () => {
     switch (true) {
       case document.readyState === "loading":
         console.log("文档加载中");
         break;
+      case document.readyState === "interactive":
         console.log("文档已被解析完成，与 DOMContentLoaded 几乎同时发生，但是在 DOMContentLoaded 之前发生");
         break;
-        console.log("文档和资源均已加载完成，与 window.onload 几乎同时发生，但是在 window.onload 之前发生");
+      case document.readyState === "complete":
+        console.log("文档加载中，文档和资源均已加载完成，与 window.onload 几乎同时发生，但是在 window.onload 之前发生");
         break;
       default:
         break;
@@ -54,9 +56,7 @@ document.body.append(script);
   });
 ```
 
-注意区分`readystatechange`和Ajax中的 `xhr.onreadystatechange`
-
-
+tips：XMLHttpRequest中也有个`onreadystatechange`事件。
 
 
 
