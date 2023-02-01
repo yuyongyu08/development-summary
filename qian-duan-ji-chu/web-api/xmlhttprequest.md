@@ -15,32 +15,31 @@ if(window.XMLHttpRequest){
 }
 ```
 
-### 第二步：发送请求
+可以不考虑兼容写法。
 
-* **初始化请求：**
+### 第二步：**初始化请求**
 
 ```
 xhr.open(method, url, async, user, password)
 ```
 
-async默认为true，Ajax存在的意义就是发异步请求，所以第三个参数可以默认不传。
+async默认为true，Ajax存在的意义就是发异步请求，所以**第三个参数可以默认不传**。
 
-* **发送参数：**
+### **第三步：发送参数**
 
-<pre><code><strong>xhr.send(body)
+<pre class="language-java"><code class="lang-java"><strong>xhr.send(body)
 </strong></code></pre>
 
-特别注意的是： 如果发送`POST`请求，请使用`setRequestHeader()`来添加 `HTTP`请求头，并在`send()`方法中传递要发送的数据：
+特别注意的是： 如果发送`POST`请求，请使用`setRequestHeader()`来添加 `HTTP`请求头，并在`send()`方法中传递要发送的数据：java
 
 ```javascript
-xhr.open("POST","ajax_test.html",true); 
 xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded"); 
 xhr.send("fname=Henry&lname=Ford");
 ```
 
-### 第三步：处理返回结果
+### 第四步：处理返回结果
 
-* 使用`onreadystatechange`事件监听状态变化
+使用`onreadystatechange`事件监听状态变化
 
 ```javascript
 xmlhttp.onreadystatechange = function () {
@@ -48,7 +47,9 @@ xmlhttp.onreadystatechange = function () {
 }
 ```
 
-*   使用`xhr.readyState`判断请求状态，状态值含义：
+其中的关键逻辑点：
+
+1.  使用`xhr.readyState`判断请求状态，状态值含义：
 
     `0`: 表示请求未初始化，还没有调用 `open()`
 
@@ -61,11 +62,10 @@ xmlhttp.onreadystatechange = function () {
     `4`: **`请求已完成；此阶段确认全部数据都已经解析完毕，可以通过异步对象的属性获取对应数据`**
 
 
-* 使用`xhr.state`判断http状态
+2. 使用`xhr.state`判断http状态
+3. 使用`xhr.response`作为请求结果返回
 
-表示成功的http状态码有`xmlhttp.status >= 200 && xmlhttp.status < 300 || xmlhttp.status == 304`
 
-* 使用`xhr.response`作为请求结果返回
 
 
 
