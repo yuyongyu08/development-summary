@@ -22,14 +22,12 @@ script.src = "/article/script-async-defer/long.js";
 document.body.append(script);
 ```
 
-默认情况下，动态脚本的行为是“异步”的，相当于async。如果像达到defer的效果，可以显式地设置了 `script.async=false`
-
-
+默认情况下，动态脚本的行为是**异步**的，相当于async。如果像达到defer的效果，可以显式地设置 `script.async=false`。
 
 ### 应用场景
 
 * async：不依赖当前页面的第三方脚本，比如数据统计、广告等
-* defer：控制脚本的执行顺序，比如先加载基础库文件再加载业务文件
+* defer：严格控制脚本的执行顺序，比如先加载基础库文件再加载业务文件
 
 ### 延伸：页面生命周期
 
