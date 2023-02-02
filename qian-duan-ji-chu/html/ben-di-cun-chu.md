@@ -8,5 +8,3 @@ Storage
 
 
 
-IndexedDB
-
