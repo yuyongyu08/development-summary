@@ -33,7 +33,7 @@
     * [盒模型和box-sizing](qian-duan-ji-chu/css/he-mo-xing-he-boxsizing.md)
     * [BFC(块级格式化上下文)](qian-duan-ji-chu/css/bfc-kuai-ji-ge-shi-hua-shang-xia-wen.md)
     * [flex](qian-duan-ji-chu/css/flex.md)
-    * [Page 3](qian-duan-ji-chu/css/page-3.md)
+    * [伪类和伪元素](qian-duan-ji-chu/css/wei-lei-he-wei-yuan-su.md)
     * [Page 4](qian-duan-ji-chu/css/page-4.md)
     * [常见形状实现](qian-duan-ji-chu/css/chang-jian-xing-zhuang-shi-xian.md)
     * [经典布局](qian-duan-ji-chu/css/jing-dian-bu-ju.md)
