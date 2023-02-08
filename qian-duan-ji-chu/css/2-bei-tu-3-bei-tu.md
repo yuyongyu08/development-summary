@@ -96,3 +96,4 @@ css设置1px的边框，在2倍屏、3倍屏会看起来更粗
 * [https://zhuanlan.zhihu.com/p/34988701](https://zhuanlan.zhihu.com/p/34988701)
 * [https://segmentfault.com/a/1190000040282079](https://segmentfault.com/a/1190000040282079)
 * [https://developer.mozilla.org/zh-CN/docs/Web/API/Window/devicePixelRatio](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/devicePixelRatio)
+* [https://juejin.cn/post/7084220221505929230](https://juejin.cn/post/7084220221505929230)
