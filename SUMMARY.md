@@ -62,6 +62,7 @@
       * [函数](qian-duan-ji-chu/javascript/es/han-shu/README.md)
         * [箭头函数](qian-duan-ji-chu/javascript/es/han-shu/jian-tou-han-shu.md)
         * [闭包](qian-duan-ji-chu/javascript/es/han-shu/bi-bao.md)
+        * [防抖和节流](qian-duan-ji-chu/javascript/es/han-shu/fang-dou-he-jie-liu.md)
         * [柯里化](qian-duan-ji-chu/javascript/es/han-shu/ke-li-hua.md)
       * [原型](qian-duan-ji-chu/javascript/es/yuan-xing/README.md)
         * [原型链](qian-duan-ji-chu/javascript/es/yuan-xing/yuan-xing-lian.md)
