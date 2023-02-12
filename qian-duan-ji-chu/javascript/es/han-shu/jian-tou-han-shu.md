@@ -102,7 +102,7 @@ name:  rory
 
 解释：
 
-第二行输出是由于箭头函数没有自己的 this 指针，通过 `call()` _或_ `apply()` 方法调用一个函数时，只能传递参数，不能绑定 this，所以`call()` _或_ `apply()` 的第一个参数会被忽略
+第二行输出是由于<mark style="color:red;">箭头函数的 this 继承自外层作用域，通过</mark> <mark style="color:red;"></mark><mark style="color:red;">`call()`</mark> <mark style="color:red;"></mark><mark style="color:red;"></mark> <mark style="color:red;"></mark>_<mark style="color:red;">或</mark>_ <mark style="color:red;"></mark><mark style="color:red;"></mark> <mark style="color:red;"></mark><mark style="color:red;">`apply()`</mark> <mark style="color:red;"></mark><mark style="color:red;">方法调用箭头函数时，只能传递函数所需参数，不能绑定 this</mark>，所以`call()` _或_ `apply()` 的第一个参数会被忽略
 
 
 
