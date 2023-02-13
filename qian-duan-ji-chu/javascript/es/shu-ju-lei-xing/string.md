@@ -1,6 +1,0 @@
----
-description: string
----
-
-# string
-
