@@ -1,6 +1,6 @@
 # 防抖和节流
 
-## 防抖（debounce）
+## 一、防抖（debounce）
 
 **概念：**
 
@@ -31,7 +31,7 @@ function debounce(callback, delay) {
 
 
 
-## 节流（throttle）
+## 二、节流（throttle）
 
 **概念：**
 
@@ -64,8 +64,6 @@ function throttle(callback, delay) {
 
 
 
-## 演示效果
+## 三、可视化演示
 
-{% embed url="https://codepen.io/yuyy/full/mdjZJWx" %}
-防抖和节流的效果演示
-{% endembed %}
+入口：[https://yuyongyu08.github.io/debounce-vs-throttle/](https://yuyongyu08.github.io/debounce-vs-throttle/)

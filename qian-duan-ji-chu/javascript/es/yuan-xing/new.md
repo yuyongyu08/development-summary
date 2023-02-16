@@ -4,7 +4,7 @@ description: new详解
 
 # new
 
-## 实例化
+## 一、实例化
 
 形式1：**构造函数（ES5）**
 
@@ -41,14 +41,14 @@ p.sayHi(); // hi, rory
 console.log(p.__proto__ === Person.prototype); // true
 ```
 
-## 构造函数实例化过程：
+## 二、构造函数实例化过程：
 
 1. 声明一个空对象
 2. 改变原型：将空对象的原型（\_\_proto\_\_）指向构造函数的原型对象（prototype）
 3. 改变this：将构造函数的this指向空对象
 4. 返回结果：<mark style="color:red;">判断构造函数执行结果是否是对象，是则直接返回执行结果，否则返回声明的那个空对象</mark>
 
-## 手动实现new：
+## 三、手动实现new：
 
 ```javascript
 function myNew(constructor, ...args) {
@@ -92,7 +92,7 @@ console.log(p2); // Person2 { name: 'yuyy' }
 
 
 
-## new.target
+## 四、new.target
 
 检测函数或构造方法是否是通过[new](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new)运算符被调用的
 

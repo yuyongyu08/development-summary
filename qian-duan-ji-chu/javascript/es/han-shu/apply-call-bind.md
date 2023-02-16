@@ -4,7 +4,7 @@ description: apply、call、bind实现原理
 
 # apply、call、bind
 
-## apply
+## 一、apply
 
 #### **语法：**
 
@@ -67,7 +67,7 @@ context = (context ?? window) || Object(context);
 
 
 
-## call
+## 二、call
 
 #### **语法：**
 
@@ -103,7 +103,7 @@ sayHi.myCall(null, 'how old are you?')
 
 除了不需要校验参数，其他同apply
 
-## bind
+## 三、bind
 
 #### **语法：**
 
@@ -169,6 +169,11 @@ if (_self.prototype) {
 
 ****
 
-****
+## **总结**
+
+* 三者都是Function原型对象的函数，每个函数都会默认继承
+* 三折的作用都是显式改变函数的this指向
+* apply和call除了接收参数方式不同，效果相同，都会执行当前函数
+* bind只是对当前函数做了一次柯里化，并不执行当前函数
 
 [^1]: 
