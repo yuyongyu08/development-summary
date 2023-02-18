@@ -31,7 +31,12 @@ Etag、Last-modified是http协议`响应字段`；If-None-Match、If-Modified-Si
 >
 > （1）并没有完全解决。Cache-Control的max-age返回的是时间段，并且将写入缓存的时间作为时间起点，这样即便是当时浏览器的时间和服务端的时间有差异，也不会影响缓存有效性的判断，除非在缓存写入后浏览器再次更改时间。
 
-> （2）Cache-Control更多是对缓存的行为做了完善，比如对于是否缓存（no-store）、是否走缓存（no-cache）、 是否允许代理服务器缓存（public）、客户端可以缓存（private，默认）
+> （2）Cache-Control更多是对缓存的行为做了完善，比如对于
+>
+> * 不缓存（no-store）
+> * <mark style="color:red;">跳过强制缓存直接协议缓存（no-cache）</mark>
+> * 是否允许除客户端之外的其他节点（比如代理服务器）缓存（public）
+> * 是否禁止代理服务器缓存（private，默认）
 
 **4.no-cache和no-store区别？**
 
