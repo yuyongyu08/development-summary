@@ -40,7 +40,7 @@
     * [2倍图、3倍图](qian-duan-ji-chu/css/2-bei-tu-3-bei-tu.md)
     * [flex](qian-duan-ji-chu/css/page-4.md)
     * [水平居中、垂直居中](qian-duan-ji-chu/css/shui-ping-ju-zhong-chui-zhi-ju-zhong.md)
-    * [经典布局](qian-duan-ji-chu/css/jing-dian-bu-ju/README.md)
+    * [经典布局](qian-duan-ji-chu/css/jing-dian-bu-ju.md)
       * [两列布局](qian-duan-ji-chu/css/jing-dian-bu-ju/liang-lie-bu-ju.md)
       * [三列布局](qian-duan-ji-chu/css/jing-dian-bu-ju/san-lie-bu-ju.md)
     * [经典实践](qian-duan-ji-chu/css/jing-dian-shi-jian.md)

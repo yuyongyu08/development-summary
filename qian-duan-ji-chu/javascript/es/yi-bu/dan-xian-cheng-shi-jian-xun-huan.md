@@ -35,7 +35,7 @@ JavaScript是单线程的，是指在JS引擎中负责解释和执行JavaScript�
 
 ## 三、事件循环（Event Loop）
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 **过程：**
 
