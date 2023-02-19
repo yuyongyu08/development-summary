@@ -43,7 +43,7 @@ description: 常见图形、文本溢出等
 img.offsetTop < window.innerHeight + document.body.scrollTop;
 ```
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
