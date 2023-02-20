@@ -1,0 +1,6 @@
+---
+description: Weak
+---
+
+# Set、WeakSet
+

@@ -7,6 +7,8 @@
 
 ## 二、箭头函数this指向谁？
 
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
 箭头函数不创建自己的this，**函数体内的this继承自**<mark style="color:red;">**作用域链的上一层**</mark>** this**，在箭头函数声明时就已经确定。但**作用域上层的this如果改变，箭头函数的this也会随之变化**。
 
 箭头函数作用域的上层常见有两种：
@@ -133,6 +135,25 @@ console.log('Person2.prototype: ', Person2.prototype);
 ```
 Person1.prototype: {constructor: ƒ}
 Person2.prototype: undefined
+```
+
+
+
+## 四、**arguments**
+
+箭头函数没有**arguments**
+
+```javascript
+const Person2 = () => {
+    console.log(arguments)
+};
+Person2();
+```
+
+输出：
+
+```javascript
+Uncaught ReferenceError: arguments is not defined
 ```
 
 

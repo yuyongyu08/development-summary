@@ -33,8 +33,8 @@ description: CSS 预处理器
 Sass中M**ixins 与 Extend的区别？**
 
 * 语义：
-  * mixin是混入，将css片段植入目标区域，编译后会产生重复的css片段
-  * extend是扩展（继承），共用css片段，编译后不会产生重复的css片段
+  * mixin是混入，将css片段植入目标区域，编译后**会**产生重复的css片段
+  * extend是扩展（继承），共用css片段，编译后**不会**产生重复的css片段
 *   语法：
 
     * mixin：
@@ -81,10 +81,6 @@ Sass中M**ixins 与 Extend的区别？**
 二者功能相同，都是为了实现css片段的复用。<mark style="color:green;">如果不需要传参，建议用extend</mark>。
 
 
-
-```
-// Some code
-```
 
 
 

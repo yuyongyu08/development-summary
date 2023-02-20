@@ -1,6 +1,8 @@
 # 自创面试题
 
-1、运行结果及原因
+### 1、箭头函数的this
+
+运行结果及原因
 
 ```javascript
 let Tom = {
@@ -46,6 +48,41 @@ node环境（v16.17.1）：
 浏览器环境：Jerry的sayHi函数的作用域的上一层是全局，此时this.name应该是window上的name，但是window上没有声明name属性，所以为空；
 
 Node环境：node环境的全局this是undefined，所以报错
+
+
+
+2、数据类型转换
+
+实现一个函数，将input转成output
+
+```javascript
+const input = [
+  { id: "1", data: "中国", pid: null },
+  { id: "2", data: "北京", pid: "1" },
+  { id: "3", data: "上海", pid: "1" },
+  { id: "4", data: "海淀", pid: "2" },
+];
+
+const output = [
+  {
+    id: "1",
+    data: "中国",
+    pid: null,
+    children: [
+      { id: "2", data: "北京", pid: "1", children: [{ id: "4", data: "海淀", pid: "2" }] },
+      { id: "3", data: "上海", pid: "1" },
+    ],
+  },
+];
+```
+
+
+
+
+
+
+
+
 
 
 
