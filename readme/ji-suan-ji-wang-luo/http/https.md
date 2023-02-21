@@ -43,7 +43,7 @@ HTTPS = HTTP + TLS/SSL
 
 > 答：数字证书 = 网站信息+ 网站公钥 + 数字签名
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 4. **证书中的数字签名是如何生成的？**
 

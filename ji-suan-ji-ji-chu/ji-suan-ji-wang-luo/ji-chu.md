@@ -1,8 +1,20 @@
 ---
-description: 分层架构：七层架构 VS 四层架构
+description: 分层架构
 ---
 
 # 基础
+
+### 一、OSI模型
+
+OSI（Open Systems Interconnection，开放式系统互联）模型，**七层架构**
+
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+### 二、TCP/IP协议族
+
+由OSI模型简化成**四层架构，**每层数据封装格式
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
