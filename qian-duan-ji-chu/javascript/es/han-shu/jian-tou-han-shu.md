@@ -7,7 +7,7 @@
 
 ## 二、箭头函数this指向谁？
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 箭头函数不创建自己的this，**函数体内的this继承自**<mark style="color:red;">**作用域链的上一层**</mark>** this**，在箭头函数声明时就已经确定。但**作用域上层的this如果改变，箭头函数的this也会随之变化**。
 
