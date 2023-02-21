@@ -40,3 +40,4 @@ description: HTTP2
 
 * [https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Basics\_of\_HTTP/Evolution\_of\_HTTP](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Basics\_of\_HTTP/Evolution\_of\_HTTP)
 * [https://juejin.cn/post/6844903734670000142](https://juejin.cn/post/6844903734670000142)
+* [https://web.dev/performance-http2/](https://web.dev/performance-http2/)
