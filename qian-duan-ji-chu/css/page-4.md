@@ -2,7 +2,7 @@
 
 ## &#x20;一、概述
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 要点：
 
@@ -88,7 +88,7 @@ flex-flow: \<flex-direction> || \<flex-wrap>\
 
 定义项目的**放大**比例，默认为`0`，即如果存在剩余空间，也不放大
 
-![](<../../.gitbook/assets/image (2) (1).png>)
+![](<../../.gitbook/assets/image (2).png>)
 
 
 
@@ -104,7 +104,7 @@ flex-flow: \<flex-direction> || \<flex-wrap>\
 
 允许单个项目有与其他项目不一样的对齐方式，可覆盖容器的`align-items`属性。
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../.gitbook/assets/image (4) (1).png>)
 
 
 
