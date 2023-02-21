@@ -108,4 +108,4 @@
   * [双线程架构](xiao-cheng-xu/shuang-xian-cheng-jia-gou.md)
   * [生命周期](xiao-cheng-xu/sheng-ming-zhou-qi.md)
   * [更新机制](xiao-cheng-xu/geng-xin-ji-zhi.md)
-* [经典面试题](jing-dian-mian-shi-ti.md)
+* [经典面试题](zi-chuang-mian-shi-ti.md)
