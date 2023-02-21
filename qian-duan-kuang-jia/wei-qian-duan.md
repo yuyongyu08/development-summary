@@ -4,39 +4,48 @@ description: qiankun原理
 
 # 微前端
 
-### 主要原理
+### 一、主要原理
 
 监听路由变化，动态装载、销毁子应用
 
 
 
-### 主要架构
+### 二、主要架构
 
 * 基座：负责子应用的注册、卸载、通信
 * 子应用
 
 
 
-### 核心技术点
+### 三、核心技术点
 
-*   JS隔离
+#### JS隔离
 
-    * 代理沙箱（Proxy Sandbox）
+1. **代理沙箱（Proxy Sandbox）**
 
-    它将window上的所有属性遍历拷贝生成一个新的fakeWindow对象，紧接着使用proxy代理这个fakeWindow，用户对window操作全部被拦截下来，只作用于在这个fakeWindow之上
+它将window上的所有属性遍历拷贝生成一个新的fakeWindow对象，紧接着使用proxy代理这个fakeWindow，用户对window操作全部被拦截下来，只作用于在这个fakeWindow之上。每个子应用分配一个fakeWindow。
 
-    * 快照（Snapshot Sandbox）沙箱：
+2. **快照沙箱（Snapshot Sandbox）**
 
-    用两个对象变量`windowSnapshot`和`modifyPropsMap` ，分别存储子应用挂载前原始`window`对象上的全部属性以及子应卸载时被其修改过的`window`对象上的相关属性
+* windowSnapshot： window对象的浅拷贝
+* modifyPropsMap ：存储子应用的修改
 
-    * 遗留沙箱（Legacy Sandbox）
-* CSS隔离（都没有完美解决弹窗挂在到body下的问题，解决方法：子应用自行隔离）
-  * shadow DOM
-  * Scoped CSS
+子应用mount时，先存储到快照windowSnapshot上，然后将子应用之前的修改modifyPropsMap（如果有的话）应用到window上；
+
+子应用unmount时，先将当前window和快照windowSnapshot做diff，将diff结果存储到modifyPropsMap上，然后用快照windowSnapshot恢复window；
+
+2. **遗留沙箱（Legacy Sandbox）**
+
+#### CSS隔离
+
+（都没有完美解决弹窗挂在到body下的问题，解决方法：子应用自行隔离）
+
+* shadow DOM
+* Scoped CSS
 
 
 
-### 通信方式
+### 四、通信方式
 
 基座 <=>子应用，发布订阅模式实现
 
@@ -46,7 +55,7 @@ description: qiankun原理
 
 
 
-### qiankun VS single-spa
+### 五、qiankun VS single-spa
 
 | 优化点     | single-spa                | qiankun            |
 | ------- | ------------------------- | ------------------ |
@@ -64,3 +73,4 @@ description: qiankun原理
 
 * [https://juejin.cn/post/7184419253087535165](https://juejin.cn/post/7184419253087535165)
 * [https://juejin.cn/post/7197608023429922871](https://juejin.cn/post/7197608023429922871)
+* [https://juejin.cn/post/7148075486403362846](https://juejin.cn/post/7148075486403362846)
