@@ -1,4 +1,4 @@
-# 自创面试题
+# 经典面试题
 
 ### 1、箭头函数的this
 
@@ -51,7 +51,7 @@ Node环境：node环境的全局this是undefined，所以报错
 
 
 
-2、数据类型转换
+## 2、数据类型转换
 
 实现一个函数，将input转成output
 
@@ -76,9 +76,35 @@ const output = [
 ];
 ```
 
+解法1：自下而上构造
 
+```javascript
+function list2tree(list) {
+  let arr = [];
+  let map = new Map();
+  list.forEach((item) => map.set(item.id, item));
 
+  list.forEach((item) => {
+    if (item.pid) {
+      let parent = map.get(item.pid);
+      parent.children = parent.children || [];
+      parent.children.push(item);
+    } else {
+      arr.push(item);
+    }
+  });
 
+  return arr;
+}
+```
+
+解法2：自上而下构造
+
+```javascript
+function list2tree(arr, id = null, link = "pid") {
+  return arr.filter((item) => item[link] === id).map((item) => ({ ...item, children: list2tree(arr, item.id) }));
+}
+```
 
 
 
