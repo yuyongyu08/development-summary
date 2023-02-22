@@ -105,6 +105,17 @@ promise2
 
 
 
+> 关于宏任务和微任务的执行时机，在Node.js 11 前和浏览器是有差异的：
+>
+> * 浏览器端：microtask 在事件循环的 macrotask 执行完之后执行，并且微任务队列里的所有微任务都执行完后再从宏任务队列取出下一个 macrotask 进行执行
+> * Node端：microtask 在事件循环的各个阶段之间执行，每个阶段可能有多个macrotask（比如timer阶段多个定时器）连续执行
+>
+> 目前两端已经消除了差异。
+
+
+
+
+
 参考：
 
 * [https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop)
