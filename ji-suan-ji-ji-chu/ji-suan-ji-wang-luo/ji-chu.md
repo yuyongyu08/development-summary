@@ -16,7 +16,7 @@ OSI（Open Systems Interconnection，开放式系统互联）模型，**七层�
 
 由OSI模型简化成**四层架构，**每层数据封装格式
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 
 
