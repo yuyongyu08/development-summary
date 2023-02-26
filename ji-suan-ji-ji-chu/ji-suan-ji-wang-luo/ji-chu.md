@@ -4,7 +4,7 @@ description: 分层架构
 
 # 基础
 
-<figure><img src="../../.gitbook/assets/流程图 (5).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/流程图 (6).jpg" alt=""><figcaption></figcaption></figure>
 
 ### 一、OSI模型
 
