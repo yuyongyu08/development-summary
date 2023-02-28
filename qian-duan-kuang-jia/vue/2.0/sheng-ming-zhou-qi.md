@@ -10,40 +10,40 @@ description: 各个阶段生命周期钩子函数
 
 #### 1.启动：
 
-* <mark style="color:purple;">grand father beforeCreate</mark>
-* <mark style="color:purple;">grand father created</mark>
-* <mark style="color:purple;">grand father beforeMount</mark>
-* <mark style="color:orange;">father beforeCreate</mark>
-* <mark style="color:orange;">father created</mark>
-* <mark style="color:orange;">father beforeMount</mark>
-* <mark style="color:green;">son beforeCreate</mark>
-* <mark style="color:green;">son created</mark>
-* <mark style="color:green;">son beforeMount</mark>
-* <mark style="color:green;">son mounted</mark>
-* <mark style="color:orange;">father mounted</mark>
-* <mark style="color:purple;">grand father mounted</mark>
+1. <mark style="color:purple;">grand father beforeCreate</mark>
+2. <mark style="color:purple;">grand father created</mark>
+3. <mark style="color:purple;">grand father beforeMount</mark>
+4. <mark style="color:orange;">father beforeCreate</mark>
+5. <mark style="color:orange;">father created</mark>
+6. <mark style="color:orange;">**father beforeMount**</mark>
+7. <mark style="color:green;">son beforeCreate</mark>
+8. <mark style="color:green;">son created</mark>
+9. <mark style="color:green;">son beforeMount</mark>
+10. <mark style="color:green;">son mounted</mark>
+11. <mark style="color:orange;">**father mounted**</mark>
+12. <mark style="color:purple;">grand father mounted</mark>
 
 #### 2.卸载父组件：
 
-* <mark style="color:purple;">grand father beforeUpdate</mark>
-* <mark style="color:orange;">father beforeUnmount</mark>
-* <mark style="color:green;">son beforeUnmount</mark>
-* <mark style="color:green;">son unmounted</mark>
-* <mark style="color:orange;">father unmounted</mark>
-* <mark style="color:purple;">grand father updated</mark>
+1. <mark style="color:purple;">grand father beforeUpdate</mark>
+2. <mark style="color:orange;">**father beforeUnmount**</mark>
+3. <mark style="color:green;">son beforeUnmount</mark>
+4. <mark style="color:green;">son unmounted</mark>
+5. <mark style="color:orange;">**father unmounted**</mark>
+6. <mark style="color:purple;">grand father updated</mark>
 
 #### 3.挂载父组件
 
-* <mark style="color:purple;">grand father beforeUpdate</mark>
-* <mark style="color:orange;">father beforeCreate</mark>
-* <mark style="color:orange;">father created</mark>
-* <mark style="color:orange;">father beforeMount</mark>
-* <mark style="color:green;">son beforeCreate</mark>
-* <mark style="color:green;">son created</mark>
-* <mark style="color:green;">son beforeMount</mark>
-* <mark style="color:green;">son mounted</mark>
-* <mark style="color:orange;">father mounted</mark>
-* <mark style="color:purple;">grand father updated</mark>
+1. <mark style="color:purple;">grand father beforeUpdate</mark>
+2. <mark style="color:orange;">father beforeCreate</mark>
+3. <mark style="color:orange;">father created</mark>
+4. <mark style="color:orange;">**father beforeMount**</mark>
+5. <mark style="color:green;">son beforeCreate</mark>
+6. <mark style="color:green;">son created</mark>
+7. <mark style="color:green;">son beforeMount</mark>
+8. <mark style="color:green;">son mounted</mark>
+9. <mark style="color:orange;">**father mounted**</mark>
+10. <mark style="color:purple;">grand father updated</mark>
 
 
 
@@ -55,7 +55,7 @@ description: 各个阶段生命周期钩子函数
 
 #### 1.初始化
 
-![](<../../../.gitbook/assets/image (4).png>)
+![](<../../../.gitbook/assets/image (4) (3).png>)
 
 #### 2.切走
 
@@ -63,12 +63,12 @@ description: 各个阶段生命周期钩子函数
 
 #### 3.切回
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 **结论**：
 
 * 挂载时，mounted后再activated
-* 切走的时候不执行unmount相关钩子，而是deactivated
+* 切走的时候先加载新组件，再缓存旧组件：不执行unmount相关钩子，而是deactivated
 * 切回的时候不再执行create和mount相关钩子，而是activated
 
 所以keep-alive是对组件实例的缓存，无需重新渲染

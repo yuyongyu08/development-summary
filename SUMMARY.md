@@ -18,7 +18,7 @@
     * [基础](ji-suan-ji-ji-chu/ji-suan-ji-wang-luo/ji-chu.md)
     * [TCP](ji-suan-ji-ji-chu/ji-suan-ji-wang-luo/tcp.md)
       * [建立连接（三次握手）](readme/ji-suan-ji-wang-luo/tcp/jian-li-lian-jie-san-ci-wo-shou.md)
-      * [断开连接（4次挥手）](readme/ji-suan-ji-wang-luo/tcp/duan-kai-lian-jie-4-ci-hui-shou.md)
+      * [断开连接（四次挥手）](readme/ji-suan-ji-wang-luo/tcp/duan-kai-lian-jie-si-ci-hui-shou.md)
     * [UDP](readme/ji-suan-ji-wang-luo/udp.md)
     * [HTTP](ji-suan-ji-ji-chu/ji-suan-ji-wang-luo/http.md)
       * [HTTP/2](readme/ji-suan-ji-wang-luo/http/http-2.md)
