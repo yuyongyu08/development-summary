@@ -88,7 +88,7 @@ flex-flow: \<flex-direction> || \<flex-wrap>\
 
 定义项目的**放大**比例，默认为`0`，即如果存在剩余空间，也不放大
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (2) (2).png>)
 
 
 
