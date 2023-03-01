@@ -82,7 +82,7 @@
       * [异步](qian-duan-ji-chu/javascript/es/yi-bu/README.md)
         * [单线程&事件循环](qian-duan-ji-chu/javascript/es/yi-bu/dan-xian-cheng-shi-jian-xun-huan.md)
         * [常见异步](qian-duan-ji-chu/javascript/es/yi-bu/chang-jian-yi-bu.md)
-        * [Promise](qian-duan-ji-chu/javascript/es/yi-bu/promise/README.md)
+        * [Promise](qian-duan-ji-chu/javascript/es/yi-bu/promise.md)
           * [all和allSettled](qian-duan-ji-chu/javascript/es/yi-bu/promise/all-he-allsettled.md)
           * [race和any](qian-duan-ji-chu/javascript/es/yi-bu/promise/race-he-any.md)
           * [resolve和reject](qian-duan-ji-chu/javascript/es/yi-bu/promise/resolve-he-reject.md)
