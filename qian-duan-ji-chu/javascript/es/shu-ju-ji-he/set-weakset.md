@@ -25,6 +25,8 @@
 * Set.prototype.keys()：Set.prototype.values的别名
 * Set.prototype.values()
 
+<mark style="color:red;">**注意**</mark>：Set的遍历顺序就是插入顺序
+
 ### 3、类型转换
 
 * Array => Set
@@ -117,9 +119,17 @@ WeakSet 中的对象都是**弱引用**，**不计入垃圾回收机制**，如�
 
 ## 三、对比
 
-| 区别   | Set      | WeakSet              |
-| ---- | -------- | -------------------- |
-| 成员类型 | 不限       | 对象                   |
-| 遍历   | 支持       | 不支持                  |
-| 适用场景 | 有去重需求的数据 | 不关心垃圾回收机制（比如存储DOM节点） |
+| 区别      | Set                                                                                                                                                                                                                                                                                                  | WeakSet                                                                                                         |
+| ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 成员类型    | 不限                                                                                                                                                                                                                                                                                                   | 对象                                                                                                              |
+| 成员函数和属性 | <ul><li>Set.prototype.add(value)</li><li>Set.prototype.has(value)</li><li>Set.prototype.delete(value)</li><li>Set.prototype.size</li><li>Set.prototype.clear()</li><li>Set.prototype.forEach()</li><li>Set.prototype.values()</li><li>Set.prototype.keys()</li><li>Set.prototype.entries()</li></ul> | <ul><li>Set.prototype.add(value)</li><li>Set.prototype.has(value)</li><li>Set.prototype.delete(value)</li></ul> |
+| 遍历      | 支持                                                                                                                                                                                                                                                                                                   | 不支持                                                                                                             |
+| 适用场景    | 有去重需求的数据                                                                                                                                                                                                                                                                                             | 不关心垃圾回收机制（比如存储DOM节点）                                                                                            |
 
+
+
+参考：
+
+* [https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global\_Objects/Set](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global\_Objects/Set)
+* [https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global\_Objects/WeakSet](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global\_Objects/WeakSet)
+* [https://es6.ruanyifeng.com/#docs/set-map#Set](https://es6.ruanyifeng.com/#docs/set-map#Set)
