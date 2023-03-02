@@ -2,192 +2,20 @@
 
 ## 一、方法
 
-### 静态方法：
+### 1、静态方法：
 
-* allSettled是对all的补充
-* any是对race的补充
+* Promise.**all**(\[promise, promise2, ...])
+* Promise.**allSettled**(\[promise, promise2, ...])
+* Promise.**race**(\[promise, promise2, ...])
+* Promise.**any**(\[promise, promise2, ...])
+* Promise.**resolve**(value)
+* Promise.**reject**(reason)
 
-主要解决有rejected任务时的场景。
+### 2、原型方法：
 
-#### 1、Promise.all(\[promise, promise2, ...])
-
-* 并发，所有任务都完成才返回结果，返回所有结果作为元素的数组
-* 有一个失败，则全失败，直接执行onReject
-
-```javascript
-let p1 = new Promise(function (resolve, reject) {
-  setTimeout(resolve, 100, "one");
-});
-let p2 = new Promise(function (resolve, reject) {
-  setTimeout(reject, 200, "two");
-});
-let p3 = new Promise(function (resolve, reject) {
-  setTimeout(resolve, 300, "three");
-});
-
-Promise.all([p1, p2, p3]).then(
-  (value) => {
-    console.log("onResolve: ", value);
-  },
-  (reason) => {
-    console.log("onRejected: ", reason);
-  }
-);
-```
-
-输出：
-
-```
-onRejected:  two
-```
-
-#### 2、Promise.allSettled(\[promise, promise2, ...])
-
-* 返回结果同Promise.all()
-* 区别：有reject的任务，依然执行onResolve，失败的任务结果也一并返回
-
-```javascript
-let p1 = new Promise(function (resolve, reject) {
-  setTimeout(resolve, 100, "one");
-});
-let p2 = new Promise(function (resolve, reject) {
-  setTimeout(reject, 200, "two");
-});
-let p3 = new Promise(function (resolve, reject) {
-  setTimeout(resolve, 300, "three");
-});
-
-Promise.allSettled([p1, p2, p3]).then((value) => {
-  console.log("onResolve: ", value);
-});
-```
-
-输出：
-
-```
-onResolve:  [
-  { status: 'fulfilled', value: 'one' },
-  { status: 'rejected', reason: 'two' },
-  { status: 'fulfilled', value: 'three' }
-]
-```
-
-
-
-#### 3、Promise.race(\[promise, promise2, ...])
-
-* 并发，返回最早完成的那个任务的结果；
-* 最早那个任务：如果fulfiled则执行onResolve，如果rejected则执行onReject
-
-```javascript
-let p1 = new Promise(function (resolve, reject) {
-  setTimeout(resolve, 500, "one");
-});
-let p2 = new Promise(function (resolve, reject) {
-  setTimeout(reject, 100, "two");
-});
-
-Promise.race([p1, p2]).then(
-  (value) => {
-    console.log("onResolve: ", value);
-  },
-  (reason) => {
-    console.log("onRejected: ", reason);
-  }
-);
-```
-
-输出：
-
-```
-onRejected:  two
-```
-
-#### 4、Promise.any(\[promise, promise2, ...])
-
-* 返回结果同Promise.all()
-* 区别：有一个fulfiled的任务，则执行onResolve；全都rejected时才执行onReject
-
-```javascript
-let p1 = new Promise(function (resolve, reject) {
-  setTimeout(resolve, 500, "one");
-});
-let p2 = new Promise(function (resolve, reject) {
-  setTimeout(reject, 100, "two");
-});
-
-Promise.any([p1, p2]).then(
-  (value) => {
-    console.log("onResolve: ", value);
-  },
-  (reason) => {
-    console.log("onRejected: ", reason);
-  }
-);
-```
-
-输出：
-
-```
-onResolve:  one
-```
-
-#### 5、Promise.resolve(value)
-
-```javascript
-Promise.resolve("fulfiled").then((value) => {
-  console.log("onResolve: ", value);
-});
-```
-
-#### 6、Promise.reject(reason)
-
-* 有onRejected时，不再执行catch
-
-```javascript
-Promise.reject("fulfiled")
-  .then(
-    (value) => {
-      console.log("onResolve: ", value);
-    },
-    (reason) => {
-      console.log("onRejected: ", reason);
-    }
-  )
-  .catch((err) => {
-    console.log("catch: ", err);
-  });
-```
-
-输出：
-
-```
-onRejected:  fulfiled
-```
-
-* 无onRejected时，执行catch
-
-```
-Promise.reject("fulfiled")
-  .then((value) => {
-    console.log("onResolve: ", value);
-  })
-  .catch((err) => {
-    console.log("catch: ", err);
-  });
-```
-
-输出：
-
-```
-catch:  fulfiled
-```
-
-### 原型方法：
-
-* Promise.prototype.then(onResolved, onRejected)
-* Promise.prototype.catch(onRejected)
-* Promise.prototype.finally(onFinally)
+* Promise.prototype.**then**(onResolved, onRejected)
+* Promise.prototype.**catch**(onRejected)
+* Promise.prototype.**finally**(onFinally)
 
 
 

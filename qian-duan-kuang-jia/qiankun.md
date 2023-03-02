@@ -2,24 +2,25 @@
 description: qiankun原理
 ---
 
-# 微前端
+# qiankun
 
 ### 一、主要原理
 
-监听路由变化，动态装载、销毁子应用
+通过监听路由变化，动态装载、销毁子应用。
 
+qiankun是对[single-spa](https://single-spa.js.org/)的封装，在其基础上主要做了两方面的扩展
 
+* **子应用的加载方式**：只需配置子应用入口，自动解析并加载其资源
+* **沙箱隔离**：对JS和样式都提供了隔离机制
 
 ### 二、主要架构
 
 * 基座：负责子应用的注册、卸载、通信
 * 子应用
 
-
-
 ### 三、核心技术点
 
-#### JS隔离
+#### 1、JS隔离
 
 1. **代理沙箱（Proxy Sandbox）**
 
@@ -34,9 +35,9 @@ description: qiankun原理
 
 子应用unmount时，先将当前window和快照windowSnapshot做diff，将diff结果存储到modifyPropsMap上，然后用快照windowSnapshot恢复window；
 
-2. **遗留沙箱（Legacy Sandbox）**
+3. **遗留沙箱（Legacy Sandbox）**
 
-#### CSS隔离
+#### 2、CSS隔离
 
 （都没有完美解决弹窗挂在到body下的问题，解决方法：子应用自行隔离）
 
@@ -65,12 +66,10 @@ description: qiankun原理
 
 
 
-
-
-
-
 参考：
 
+* [https://qiankun.umijs.org/zh](https://qiankun.umijs.org/zh)
+* [https://single-spa.js.org/](https://single-spa.js.org/)
 * [https://juejin.cn/post/7184419253087535165](https://juejin.cn/post/7184419253087535165)
 * [https://juejin.cn/post/7197608023429922871](https://juejin.cn/post/7197608023429922871)
 * [https://juejin.cn/post/7148075486403362846](https://juejin.cn/post/7148075486403362846)
