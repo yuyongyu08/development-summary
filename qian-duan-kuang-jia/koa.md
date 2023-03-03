@@ -8,7 +8,9 @@ description: koa
 
 <figure><img src="../.gitbook/assets/UML 图.jpg" alt=""><figcaption></figcaption></figure>
 
-## 二、洋葱模型就是函数嵌套调用
+## 二、洋葱模型原理
+
+洋葱模型可以理解成**函数嵌套调用**。
 
 在 `koa` 中，中间件被 `next()` 方法分成了两部分。`next()` 方法上面部分会先执行，下面部分会在后续中间件执行全部结束之后再执行。
 
