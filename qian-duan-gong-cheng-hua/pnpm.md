@@ -4,40 +4,34 @@ description: pnpm浅析
 
 # pnpm
 
-### **一、npm2时代**
+## **一、npm2时代**
 
-> 原理图
+### 1、原理图
 
-<figure><img src="../.gitbook/assets/npm-v2.png" alt=""><figcaption><p>npm v2 原理图</p></figcaption></figure>
+![](<../.gitbook/assets/流程图 (7).jpg>)
 
-> 特点：
+### 2、特点：
 
 * 嵌套安装：每个依赖项都有自己的node\_modules文件夹
 
-> 问题：
+### 3、问题：
 
 * 依赖树太深，超出windows上目录路径访问长度限制
 * 浪费磁盘空间，同一个依赖在不同包下被多次下载
 
 ****
 
-****
+## **二、npm3、yarn时代**
 
-****
+### 1、原理图
 
-### **二、npm3、yarn时代**
+![](<../.gitbook/assets/流程图 (9).jpg>)
 
-****
-
-> 原理图
-
-<figure><img src="../.gitbook/assets/npm-v3.png" alt=""><figcaption><p>npm v3 原理图</p></figcaption></figure>
-
-> 特点：
+### 2、特点：
 
 * 扁平安装：将依赖提升到平级，对于版本冲突的依赖项继续保留在包的node\_modules中
 
-> 问题：
+### 3、问题：
 
 * 被提升的依赖不确定，取决于安装顺序（比如，先安装B，则被提升的则是C V2.0 ）
 * 幽灵依赖，没有显式安装依赖却能在项目中直接引用，后续一旦依赖在某个版本被移除则会出问题
@@ -78,15 +72,15 @@ npm3/yarn
 
 如上所示的packageX 2.0和packageY 2.0被重复安装多次
 
-### **三、pnpm时代**
+## **三、pnpm时代**
 
 pnpm（persistent npm），主要特点：依赖包的持久化
 
-> 原理图：&#x20;
+### 1、原理图：&#x20;
 
 <figure><img src="../.gitbook/assets/pnpm-inner.jpeg" alt=""><figcaption><p>pnpm 原理图</p></figcaption></figure>
 
-> 原理解释：
+### 2、原理解释：
 
 * node\_modules下除了package.json中的依赖，还有一个.pnpm，所有的依赖包在.pnpm是平级结构，命名形式：包名@版本号
 * .pnpm是个一个虚拟store（Virtual store），里面的依赖包`硬链接`到真实Store（Content-addressable store）中，真实Store才是依赖包文件真正的存储位置
@@ -95,16 +89,14 @@ pnpm（persistent npm），主要特点：依赖包的持久化
 
 概括：**依赖包** ---(<mark style="color:green;">软</mark>链接)--- > **.pnpm** ----(<mark style="color:red;">硬</mark>链接) ---> **Store**
 
-
-
-> 问题
+### 3、问题
 
 * 硬链接在 window 系统有兼容性的问题
 * CI/CD 中因为依赖包是全局存储，可能会命中不同的机器，也有可能存在权限的问题
 
 
 
-> 扩展：软链接 vs 硬链接
+### 4、扩展：软链接 vs 硬链接
 
 <figure><img src="../.gitbook/assets/9082c195-ccf3-44d2-b08c-493cb94f89c1.png" alt=""><figcaption><p>软链接 vs 硬链接</p></figcaption></figure>
 

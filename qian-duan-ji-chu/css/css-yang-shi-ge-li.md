@@ -8,7 +8,7 @@
 
 每个组件分配一个hash，组件内的所有选择器加上 data-\[hansh] 的修饰，这样就可以实现组件间样式隔离
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ###
 

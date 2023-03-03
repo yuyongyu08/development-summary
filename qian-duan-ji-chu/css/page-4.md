@@ -82,7 +82,7 @@ flex-flow: \<flex-direction> || \<flex-wrap>\
 
 定义项目的排列顺序。数值越小，排列越靠前，默认为0。
 
-![](<../../.gitbook/assets/image (1) (2).png>)
+![](<../../.gitbook/assets/image (1) (2) (1).png>)
 
 ### 2.flex-grow
 

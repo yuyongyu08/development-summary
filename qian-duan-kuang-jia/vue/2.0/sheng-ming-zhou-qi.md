@@ -59,7 +59,7 @@ description: 各个阶段生命周期钩子函数
 
 #### 2.切走
 
-![](<../../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (2) (3).png>)
 
 #### 3.切回
 
