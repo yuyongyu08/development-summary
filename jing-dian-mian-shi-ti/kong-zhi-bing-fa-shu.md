@@ -68,7 +68,31 @@ class Scheduler {
 }
 ```
 
+非递归：
 
+```javascript
+class Scheduler {
+  constructor(maxCount) {
+    this.queue = [];
+    this.maxCount = maxCount;
+    this.runningCount = 0;
+  }
+
+  async add(promiseCreator) {
+    // 用来设置阻塞（resolve不被执行，await后面的就不会加入到微任务队列）
+    if (this.runningCount >= this.maxCount) {
+      await new Promise((resolve) => this.queue.push(resolve));
+    }
+
+    this.runningCount++;
+    await promiseCreator();
+    this.runningCount--;
+
+    // 打开一个阻塞
+    this.queue.length && this.queue.shift()();
+  }
+}
+```
 
 ## 考察点
 

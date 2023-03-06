@@ -186,6 +186,43 @@ function B() {
 
 
 
+### Promise的微任务什么时候加入到微任务队列？
+
+<mark style="color:red;">**Promise的微任务必须是状态变成非pending之后加入到微任务队列**</mark>
+
+注意观察promise3和promise4的输出顺序
+
+```javascript
+new Promise(function(resolve) {
+    console.log('promise1');
+    resolve();
+}).then(function() {
+    setTimeout(() => console.log('promise2'), 1000)
+}).then(function() {
+    console.log('promise3');
+})
+
+
+Promise.resolve('promise4').then(function(value) {
+    console.log(value);
+})
+```
+
+输出：
+
+```
+promise1
+promise4
+promise3
+promise2
+```
+
+promise3虽然在promise4之前，但因为输出就是因为
+
+
+
+
+
 参见：
 
 * [https://developer.mozilla.org/zh-CN/docs/Web/API/setTimeout](https://developer.mozilla.org/zh-CN/docs/Web/API/setTimeout)
