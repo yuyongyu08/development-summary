@@ -39,7 +39,7 @@
 ### 4、变量
 
 * CommonJS：值拷贝（不会变）
-* ES6 Module：值引用（会变，单例）
+* ES6 Module：值引用（会变，<mark style="color:red;">**单例**</mark>）
 
 ### 5、是否可修改
 
