@@ -188,7 +188,7 @@ function B() {
 
 ### Promise的微任务什么时候加入到微任务队列？
 
-<mark style="color:red;">**Promise的微任务必须是状态变成非pending之后加入到微任务队列**</mark>
+Promise的微任务必须是实例的状态<mark style="color:red;">**变成非pending之后加入**</mark>到微任务队列
 
 注意观察promise3和promise4的输出顺序
 
@@ -217,7 +217,7 @@ promise3
 promise2
 ```
 
-promise3虽然在promise4之前，但因为输出就是因为
+
 
 
 

@@ -20,7 +20,11 @@ qiankun是对[single-spa](https://single-spa.js.org/)的封装，在其基础上
 
 ### 三、核心技术点
 
-#### 1、JS隔离
+#### 1、子应用加载
+
+借助import-html-entry从子应用的首页解析出对应的资源进行请求，无需用户手动配置。
+
+#### 2、JS隔离
 
 1. **代理沙箱（Proxy Sandbox）**
 
@@ -31,13 +35,13 @@ qiankun是对[single-spa](https://single-spa.js.org/)的封装，在其基础上
 * windowSnapshot： window对象的浅拷贝
 * modifyPropsMap ：存储子应用的修改
 
-子应用mount时，先存储到快照windowSnapshot上，然后将子应用之前的修改modifyPropsMap（如果有的话）应用到window上；
+子应用mount时，先将window存储到快照windowSnapshot上，然后将子应用之前的修改modifyPropsMap（如果有的话）应用到window上；
 
 子应用unmount时，先将当前window和快照windowSnapshot做diff，将diff结果存储到modifyPropsMap上，然后用快照windowSnapshot恢复window；
 
 3. **遗留沙箱（Legacy Sandbox）**
 
-#### 2、CSS隔离
+#### 3、CSS隔离
 
 （都没有完美解决弹窗挂在到body下的问题，解决方法：子应用自行隔离）
 

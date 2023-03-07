@@ -31,6 +31,8 @@ description: 常见图形、文本溢出等
 
 #### 多行：
 
+box-orient + line-clamp
+
 {% embed url="https://codepen.io/yuyy/full/RwYPjoo" %}
 
 ### 三、判断元素是否到达可视区域
