@@ -62,7 +62,7 @@ flex-flow: \<flex-direction> || \<flex-wrap>\
 * baseline：第一行文字的基线对齐
 * stretch（默认）：如果项目没有设置定高，或者设置为auto，将占满整个容器高度
 
-### ![](<../../.gitbook/assets/image (9).png>)  6.align-content
+### ![](<../../.gitbook/assets/image (9) (1).png>)  6.align-content
 
 多根轴线的对齐方式。如果项目只有一根轴线，此属性不起作用。
 

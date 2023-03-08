@@ -1,6 +1,6 @@
 # 性能优化
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 [timing模型](https://w3c.github.io/navigation-timing/#processing-model)
 

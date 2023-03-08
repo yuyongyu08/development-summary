@@ -43,7 +43,7 @@ description: vite原理
 
 ### 1、打包后的入口模版
 
-<figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ### 2、资源加载规则
 

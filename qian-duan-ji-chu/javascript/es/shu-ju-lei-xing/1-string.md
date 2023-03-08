@@ -14,9 +14,9 @@ description: string
 
 ### 2、截取
 
-* [String.prototype.slice(start, end)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global\_Objects/String/slice)：【截取\[start, end)之间的字符】
 * [String.prototype.substr(start\[, length\]) ](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global\_Objects/String/substr)<mark style="color:red;">`[待废弃]`</mark>
 * [String.prototype.substring(start, end)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global\_Objects/String/substring)：【截取\[start, end)之间的字符】
+* [String.prototype.slice(start, end)](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global\_Objects/String/slice)：【截取\[start, end)之间的字符】作用和用法同substring
 
 ### 4、拼接
 

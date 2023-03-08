@@ -63,7 +63,7 @@ description: 各个阶段生命周期钩子函数
 
 #### 3.切回
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 **结论**：
 
