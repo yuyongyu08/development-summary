@@ -9,7 +9,7 @@
 * 列表项如果不定高如何处理？
 * 滚动过快有白屏
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 参见：
 
