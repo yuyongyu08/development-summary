@@ -19,4 +19,4 @@ coverY: 0
 * 邮箱：yuyongyu08@163.com
 * 微信：
 
-![](<.gitbook/assets/image (4).png>)
+<img src=".gitbook/assets/image (4).png" alt="" data-size="original">
