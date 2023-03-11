@@ -18,7 +18,11 @@ let person = new Person('yuyongyu');
 
 ### **总结：**
 
-1. 引用类型都有`__proto__`属性，称为**原型**
+1.  引用类型都有`__proto__`属性，称为**原型**，获取方式：
+
+    ```vue
+    Object.getPrototypeOf(obj)
+    ```
 2. 引用类型的原型指向构造函数的**原型对象**，即`prototype`属性
 3. 构造函数的原型对象中`constructor`属性指向自身
 

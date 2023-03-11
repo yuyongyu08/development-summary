@@ -41,7 +41,7 @@
 ### 5、归并
 
 * Array.prototype.reduce((pre, cur, curIndex, array) => {}, initVal)
-* Array.prototype.reduceRight((pre, cur, curIndex, array) => {}, initVal)
+* Array.prototype.[reduceRight](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global\_Objects/Array/reduceRight)((pre, cur, curIndex, array) => {}, initVal)
 
 ### 6、排序
 

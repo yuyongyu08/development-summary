@@ -76,7 +76,7 @@ let mwFn = compose(mws);
 mwFn();
 ```
 
-#### 方式2：柯里化方式
+#### 方式2：柯里化方式（递归）
 
 ```javascript
 const mws = [A, B, C, D];
