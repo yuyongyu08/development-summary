@@ -20,7 +20,7 @@ description: webpack
 源码：
 
 1. 避免引入没有用到的文件/api，减少 tree shaking的时间
-2. 避免工具库（例如Element UI）全量引入，减少打包时间
+2. 工具库（例如Element UI）按需引入，减少打包时间
 3. 指定文件后缀，缩短查找时间
 
 工具

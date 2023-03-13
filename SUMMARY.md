@@ -132,4 +132,5 @@
   * [箭头函数this-2](jing-dian-mian-shi-ti/jian-tou-han-shu-this2.md)
   * [数组转树](jing-dian-mian-shi-ti/shu-zu-zhuan-shu.md)
   * [控制并发数](jing-dian-mian-shi-ti/kong-zhi-bing-fa-shu.md)
+  * [动态规划-二维数组全排列](jing-dian-mian-shi-ti/dong-tai-gui-hua-er-wei-shu-zu-quan-pai-lie.md)
   * [柯里化](jing-dian-mian-shi-ti/ke-li-hua.md)
