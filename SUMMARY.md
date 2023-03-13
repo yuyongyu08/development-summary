@@ -114,6 +114,7 @@
   * [qiankun](qian-duan-kuang-jia/qiankun.md)
   * [koa](qian-duan-kuang-jia/koa.md)
 * [前端方案](qian-duan-fang-an.md)
+  * [错误上报](qian-duan-fang-an/cuo-wu-shang-bao.md)
   * [性能优化](qian-duan-ji-chu/liu-lan-qi/ye-mian-xing-neng-you-hua.md)
   * [长列表优化原理](qian-duan-fang-an/chang-lie-biao-you-hua-yuan-li.md)
   * [H5移动端适配](qian-duan-fang-an/h5-yi-dong-duan-shi-pei.md)
