@@ -10,7 +10,7 @@ description: 分层架构
 
 OSI（Open Systems Interconnection，开放式系统互联）模型，**七层架构**
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 二、TCP/IP协议族
 

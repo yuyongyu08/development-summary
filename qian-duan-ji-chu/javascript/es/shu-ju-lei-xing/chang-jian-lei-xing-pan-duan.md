@@ -31,7 +31,7 @@ const types = {
 | string    | <mark style="color:green;">"string"</mark>    | false                                  | "\[object String]"             |
 | number    | <mark style="color:green;">"number"</mark>    | false                                  | "\[object Number]"             |
 | boolean   | <mark style="color:green;">"boolean"</mark>   | false                                  | "\[object Boolean]"            |
-| null      | <mark style="color:green;">"object"</mark>    | false                                  | "\[object Null]"               |
+| null      | "object"                                      | false                                  | "\[object Null]"               |
 | undefined | <mark style="color:green;">"undefined"</mark> | false                                  | "\[object Undefined]"          |
 | symbol    | <mark style="color:green;">"symbol"</mark>    | false                                  | "\[object Symbol]"             |
 | bigint    | <mark style="color:green;">"bigint"</mark>    | false                                  | "\[object BigInt]"             |
