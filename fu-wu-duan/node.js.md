@@ -2,7 +2,7 @@
 
 ## 一、概念
 
-Node.js运行环境，JavaScript是编程语言。使用JavaScript编写的代码可以运行在Node.js中。
+Node.js是**运行环境**，JavaScript是编程语言。使用JavaScript编写的代码可以运行在Node.js中。
 
 ## 二、架构
 
@@ -24,6 +24,21 @@ Node.js运行环境，JavaScript是编程语言。使用JavaScript编写的代�
 <figure><img src="../.gitbook/assets/UML 图 (1).jpg" alt=""><figcaption></figcaption></figure>
 
 理论上，Node.js对CPU的利用是100%。
+
+
+
+## 五、单线程弊端
+
+弊端：主线程挂掉，整个服务就会挂掉
+
+解决：
+
+* 部署多个节点，借助负载均衡保证服务可用
+* 增加进程守护（比如PM2）
+
+
+
+
 
 
 
