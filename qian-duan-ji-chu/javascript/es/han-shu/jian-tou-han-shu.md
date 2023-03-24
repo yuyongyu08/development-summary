@@ -158,6 +158,15 @@ Uncaught ReferenceError: arguments is not defined
 
 
 
+### 箭头函数与普通函数的区别：
+
+1. this指向：在生命阶段就已确定
+2. 无原型对象
+3. 不能new
+4. 没有arguments
+
+
+
 参考：
 
 * [https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow\_functions](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions/Arrow\_functions)
