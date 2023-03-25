@@ -89,7 +89,7 @@
           * [resolve和reject](qian-duan-ji-chu/javascript/es/yi-bu/promise/resolve-he-reject.md)
       * [模块化](qian-duan-ji-chu/javascript/es/mo-kuai-hua.md)
     * [DOM](qian-duan-ji-chu/javascript/dom/README.md)
-      * [事件模型](qian-duan-ji-chu/javascript/dom/shi-jian-mo-xing.md)
+      * [DOM事件](qian-duan-ji-chu/javascript/dom/dom-shi-jian.md)
       * [事件分类](qian-duan-ji-chu/javascript/dom/shi-jian-fen-lei.md)
     * [BOM](qian-duan-ji-chu/javascript/bom.md)
   * [浏览器](qian-duan-ji-chu/liu-lan-qi/README.md)
