@@ -29,7 +29,7 @@
 
 ## 二、fetch
 
-借助[`AbortController`](https://developer.mozilla.org/zh-CN/docs/Web/API/AbortController)``
+借助[`AbortController`](https://developer.mozilla.org/zh-CN/docs/Web/API/AbortController)
 
 ```html
 <!DOCTYPE html>

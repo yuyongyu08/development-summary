@@ -84,7 +84,7 @@ Storage.clear();
 
 子页面的控制台输出：`parent_1:null`
 
-``
+
 
 **总结：通过window.open方式打开的子页面会复制父页面的`sessionStorage`，但父级页面后续更新的`sessionStorage`不再和子级页面共享同步**
 

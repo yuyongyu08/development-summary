@@ -14,7 +14,7 @@ defer：异步下载，等页面解析完后再执行
 * 执行顺序：多个带async属性的脚本的**执行顺序随机**，取决于各自下载完成的事件；多个带defer属性的脚本则严格按照各自出现在文档的先后**顺序执行**
 * `DOMContentLoaded` ：async和`DOMContentLoaded` 事件不会彼此等待，不能保证谁先谁后；defer在 `DOMContentLoaded` 事件之前执行
 
-> **可视化demo验证：**[**传送门**](https://yuyongyu08.github.io/async-vs-defer/)****
+> **可视化demo验证：**[**传送门**](https://yuyongyu08.github.io/async-vs-defer/)
 
 ### 与动态脚本关系
 
