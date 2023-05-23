@@ -4,7 +4,11 @@
 
 JavaScript代码是先编译再执行，即分为**编译阶段**和**执行阶段。**编译阶段需要将变量声明提升到作用域顶部，以确保后续代码能正常编译。
 
+<div align="left">
+
 <figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 执行上下文是 JavaScript 执行一段代码时的运行环境，它定义了变量或函数有权访问的其他数据，决定了它们各自的行为。
 

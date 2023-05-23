@@ -16,7 +16,11 @@
 
 将CSS样式作为JS变量
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 
 

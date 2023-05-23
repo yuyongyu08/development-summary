@@ -2,7 +2,11 @@
 
 
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/whiteboard_exported_image.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 **1、为什么是三次握手，而不是两次或者四次？**
 

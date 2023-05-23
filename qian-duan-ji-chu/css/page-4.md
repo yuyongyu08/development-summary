@@ -2,7 +2,11 @@
 
 ## &#x20;一、概述
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 要点：
 

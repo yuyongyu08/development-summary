@@ -2,11 +2,15 @@
 description: koa
 ---
 
-# koa
+# Koa
 
 ## 一、洋葱模型
 
+<div align="left">
+
 <figure><img src="../.gitbook/assets/UML 图.jpg" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ## 二、洋葱模型原理
 

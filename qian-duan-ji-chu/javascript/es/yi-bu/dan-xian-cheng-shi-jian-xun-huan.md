@@ -35,7 +35,11 @@ JavaScript是单线程的，是指在JS引擎中负责解释和执行JavaScript�
 
 ## 三、事件循环（Event Loop）
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<div align="left">
+
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 **过程：**
 
@@ -60,7 +64,11 @@ JavaScript是单线程的，是指在JS引擎中负责解释和执行JavaScript�
 * 微任务队列执行完后，开始从宏任务队列中取宏任务进行执行；
 * 每个宏任务间隔先会检查微任务队列，只有微任务队列为空后，才从宏任务队列取出下一个宏任务进行执行。
 
+<div align="left">
+
 <figure><img src="../../../../.gitbook/assets/macrotask.jpg" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 **代码验证：**
 

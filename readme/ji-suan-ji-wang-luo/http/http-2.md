@@ -63,19 +63,31 @@ HTTP/1.1与HTTP/2的性能对比：[demo](https://http2.akamai.com/demo)
 
 HTTP/2将消息划分为两个帧：HEADERS、DATA，并应二进制进行编码；HTTP/1.1采用的是文本格式
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/http2.svg" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ### 2、多路复用
 
 一个TCP可以同时支持多个流存在，这是HTTP/2其他功能和性能优化的基础
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/http2-stream.svg" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ### 3、头部压缩
 
 首次请求后，客户端和服务端会建立一个关于header字段的字典，后续再请求只需传输对应字段的索引即可。
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/http2-header.svg" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 ### 4、服务端推送
 

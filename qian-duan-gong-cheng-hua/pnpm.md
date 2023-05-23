@@ -8,7 +8,7 @@ description: pnpm浅析
 
 ### 1、原理图
 
-![](<../../.gitbook/assets/流程图 (7).jpg>)
+![](<../.gitbook/assets/流程图 (7).jpg>)
 
 ### 2、特点：
 
@@ -25,7 +25,7 @@ description: pnpm浅析
 
 ### 1、原理图
 
-![](<../../.gitbook/assets/流程图 (9).jpg>)
+![](<../.gitbook/assets/流程图 (9).jpg>)
 
 ### 2、特点：
 
@@ -78,7 +78,7 @@ pnpm（persistent npm），主要特点：依赖包的持久化
 
 ### 1、原理图：&#x20;
 
-<figure><img src="../../.gitbook/assets/pnpm-inner.jpeg" alt=""><figcaption><p>pnpm 原理图</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/pnpm-inner.jpeg" alt=""><figcaption><p>pnpm 原理图</p></figcaption></figure>
 
 ### 2、原理解释：
 
@@ -98,7 +98,7 @@ pnpm（persistent npm），主要特点：依赖包的持久化
 
 ### 4、扩展：软链接 vs 硬链接
 
-<figure><img src="../../.gitbook/assets/9082c195-ccf3-44d2-b08c-493cb94f89c1.png" alt=""><figcaption><p>软链接 vs 硬链接</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/9082c195-ccf3-44d2-b08c-493cb94f89c1.png" alt=""><figcaption><p>软链接 vs 硬链接</p></figcaption></figure>
 
 * 硬链接：（**指向目标文件的存储地址**）
   * 与普通文件没什么不同，inode 都指向同一个文件在硬盘中的区块

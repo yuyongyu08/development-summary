@@ -12,13 +12,21 @@ HTTPS = HTTP + TLS/SSL
 
 ## 二、处于计算机网络的哪一层？
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/https.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 
 
 ## 三、流程
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/https-flow.png" alt=""><figcaption><p>通信流程</p></figcaption></figure>
+
+</div>
 
 涉及两种加密：
 
@@ -37,13 +45,21 @@ HTTPS = HTTP + TLS/SSL
 >
 >
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/MITM.png" alt=""><figcaption><p>中间人攻击</p></figcaption></figure>
+
+</div>
 
 3. **证书都包含什么内容？**
 
 > 答：数字证书 = 网站信息+ 网站公钥 + 数字签名
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 4. **证书中的数字签名是如何生成的？**
 
@@ -57,7 +73,11 @@ HTTPS = HTTP + TLS/SSL
 
 > 答：防止服务端的公钥被篡改。如果没有签名，中间人如果把网站信息和公钥都篡改了，和直接传输公钥没有本质的区别，还会形成中间人攻击：&#x20;
 
+<div align="left">
+
 <figure><img src="../../../.gitbook/assets/no-signature.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 6. 客户端如何验证证书有效性的？
 
