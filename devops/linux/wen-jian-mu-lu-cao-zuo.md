@@ -18,8 +18,7 @@ ls -la
 ![](<../../.gitbook/assets/image (2).png>)
 
 \
-档案类型：\
-
+档案类型：
 
 * 当为\[ d ]则是目录，例如[上表](http://cn.linux.vbird.org/linux\_basic/0210filepermission\_2.php#table2.1.1)档名为『.gconf』的那一行；
 * 当为\[ - ]则是文件，例如[上表](http://cn.linux.vbird.org/linux\_basic/0210filepermission\_2.php#table2.1.1)档名为『install.log』那一行；
@@ -34,7 +33,6 @@ ls -la
 * \[ w ]代表可写(write)、
 * \[ x ]代表可执行(execute)
 
-\
 \
 修改权限：
 
@@ -69,7 +67,7 @@ ls -la
 ### 7、mv（移动）
 
 * mv \[被移动文件或文件夹] \[目标文件或文件夹]
-* mv \[原文件名] \[新文件名] ：重命名
+* mv \[原文件名] \[新文件名] ：<mark style="color:green;">重命名</mark>
 * mv \[文件1] \[文件2] \[文件3] \[目标文件夹]：移动多个文件
 
 ### 8、cp（复制）

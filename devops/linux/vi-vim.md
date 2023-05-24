@@ -44,7 +44,7 @@
 
 行：
 
-* 删除当前行：dd
+* <mark style="color:green;">删除当前行：dd</mark>
 * 删除n行：ndd
 * 删除至第一行：d1G
 * 删除至最后一行：dG
@@ -52,7 +52,7 @@
 4. 复制
 
 * 复制选中：y
-* 复制当前行：yy
+* <mark style="color:green;">复制当前行：yy</mark>
 * 复制n行：nyy
 * 复制至第一行：y1G
 * 复制至最后一行：yG
