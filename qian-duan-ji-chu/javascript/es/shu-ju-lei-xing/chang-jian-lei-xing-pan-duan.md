@@ -26,22 +26,7 @@ const types = {
 
 **结果统计：**
 
-| 类型        | typeof                                        | instanceof \[constructor]              | Object.prototype.toString.call |
-| --------- | --------------------------------------------- | -------------------------------------- | ------------------------------ |
-| string    | <mark style="color:green;">"string"</mark>    | false                                  | "\[object String]"             |
-| number    | <mark style="color:green;">"number"</mark>    | false                                  | "\[object Number]"             |
-| boolean   | <mark style="color:green;">"boolean"</mark>   | false                                  | "\[object Boolean]"            |
-| null      | "object"                                      | false                                  | "\[object Null]"               |
-| undefined | <mark style="color:green;">"undefined"</mark> | false                                  | "\[object Undefined]"          |
-| symbol    | <mark style="color:green;">"symbol"</mark>    | false                                  | "\[object Symbol]"             |
-| bigint    | <mark style="color:green;">"bigint"</mark>    | false                                  | "\[object BigInt]"             |
-| function  | <mark style="color:green;">"function"</mark>  | <mark style="color:green;">true</mark> | "\[object Function]"           |
-| array     | "object"                                      | <mark style="color:green;">true</mark> | "\[object Array]"              |
-| object    | "object"                                      | <mark style="color:green;">true</mark> | "\[object Object]"             |
-| map       | "object"                                      | <mark style="color:green;">true</mark> | "\[object Map]"                |
-| weakMap   | "object"                                      | <mark style="color:green;">true</mark> | "\[object WeakMap]"            |
-| set       | "object"                                      | <mark style="color:green;">true</mark> | "\[object Set]"                |
-| weakSet   | "object"                                      | <mark style="color:green;">true</mark> | "\[object WeakSet]"            |
+<table><thead><tr><th width="133">类型</th><th width="125">typeof</th><th width="220">instanceof [constructor]</th><th>Object.prototype.toString.call</th></tr></thead><tbody><tr><td>string</td><td><mark style="color:green;">"string"</mark></td><td>false</td><td>"[object String]"</td></tr><tr><td>number</td><td><mark style="color:green;">"number"</mark></td><td>false</td><td>"[object Number]"</td></tr><tr><td>boolean</td><td><mark style="color:green;">"boolean"</mark></td><td>false</td><td>"[object Boolean]"</td></tr><tr><td>null</td><td>"object"</td><td>false</td><td>"[object Null]"</td></tr><tr><td>undefined</td><td><mark style="color:green;">"undefined"</mark></td><td>false</td><td>"[object Undefined]"</td></tr><tr><td>symbol</td><td><mark style="color:green;">"symbol"</mark></td><td>false</td><td>"[object Symbol]"</td></tr><tr><td>bigint</td><td><mark style="color:green;">"bigint"</mark></td><td>false</td><td>"[object BigInt]"</td></tr><tr><td>function</td><td><mark style="color:green;">"function"</mark></td><td><mark style="color:green;">true</mark></td><td>"[object Function]"</td></tr><tr><td>array</td><td>"object"</td><td><mark style="color:green;">true</mark></td><td>"[object Array]"</td></tr><tr><td>object</td><td>"object"</td><td><mark style="color:green;">true</mark></td><td>"[object Object]"</td></tr><tr><td>map</td><td>"object"</td><td><mark style="color:green;">true</mark></td><td>"[object Map]"</td></tr><tr><td>weakMap</td><td>"object"</td><td><mark style="color:green;">true</mark></td><td>"[object WeakMap]"</td></tr><tr><td>set</td><td>"object"</td><td><mark style="color:green;">true</mark></td><td>"[object Set]"</td></tr><tr><td>weakSet</td><td>"object"</td><td><mark style="color:green;">true</mark></td><td>"[object WeakSet]"</td></tr></tbody></table>
 
 
 

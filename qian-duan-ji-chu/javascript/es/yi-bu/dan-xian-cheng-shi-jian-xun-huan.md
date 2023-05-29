@@ -37,7 +37,7 @@ JavaScript是单线程的，是指在JS引擎中负责解释和执行JavaScript�
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

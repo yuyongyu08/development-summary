@@ -6,11 +6,7 @@ any是对race的补充：尽可能等一个fulfilled的结果
 
 ## 二、区别
 
-| 场景                 | Promise.race()             | Promise.any()            |
-| ------------------ | -------------------------- | ------------------------ |
-| 全fulfilled         | onResolve，返回最早的fulfilled   | onResolve，返回最早的fulfilled |
-| fulfilled+rejected | 不定，返回最早的rejected/fulfilled | onResolve，返回最早的fulfilled |
-| 全rejected          | onRejected，返回最早的rejected   | onRejected，返回所有的rejected |
+<table><thead><tr><th width="178.33333333333331">场景</th><th>Promise.race()</th><th>Promise.any()</th></tr></thead><tbody><tr><td>全fulfilled</td><td>onResolve，返回最早的fulfilled</td><td>onResolve，返回最早的fulfilled</td></tr><tr><td>fulfilled+rejected</td><td>不定，返回最早的rejected/fulfilled</td><td>onResolve，返回最早的fulfilled</td></tr><tr><td>全rejected</td><td>onRejected，返回最早的rejected</td><td>onRejected，返回所有的rejected</td></tr></tbody></table>
 
 ## 三、详解
 

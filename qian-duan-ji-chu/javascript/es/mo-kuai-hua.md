@@ -2,12 +2,7 @@
 
 ## 一、模块化规范
 
-| 规范         | 导出（定义）                 | 导入（引用）      | 代表（实现）    | 加载方式       | 使用环境             |
-| ---------- | ---------------------- | ----------- | --------- | ---------- | ---------------- |
-| CommonJS   | module.exports/exports | require     | Node.js   | 同步，动态（运行时） | 服务器、桌面           |
-| AMD        | define                 | require     | RequireJS | 异步         | 浏览器              |
-| CMD        | define                 | require     | Sea.js    | 异步         | 浏览器              |
-| ES6 Module | export/export default  | import from | -         | 同步，静态（编译时） | 服务器、浏览器（需要转译才支持） |
+<table><thead><tr><th width="141">规范</th><th width="152">导出（定义）</th><th>导入（引用）</th><th>代表（实现）</th><th>加载方式</th><th>使用环境</th></tr></thead><tbody><tr><td>CommonJS</td><td>module.exports/exports</td><td>require</td><td>Node.js</td><td>同步，动态（运行时）</td><td>服务器、桌面</td></tr><tr><td>AMD</td><td>define</td><td>require</td><td>RequireJS</td><td>异步</td><td>浏览器</td></tr><tr><td>CMD</td><td>define</td><td>require</td><td>Sea.js</td><td>异步</td><td>浏览器</td></tr><tr><td>ES6 Module</td><td>export/export default</td><td>import from</td><td>-</td><td>同步，静态（编译时）</td><td>服务器、浏览器（需要转译才支持）</td></tr></tbody></table>
 
 
 

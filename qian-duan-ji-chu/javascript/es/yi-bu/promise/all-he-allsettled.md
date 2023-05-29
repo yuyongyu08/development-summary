@@ -8,11 +8,7 @@ allSettled是对all的补充：始终执行onResolve，rejected的结果也一�
 
 ## 二、区别
 
-| 场景                 | Promise.all()            | Promise.allSettled()              |
-| ------------------ | ------------------------ | --------------------------------- |
-| 全fulfilled         | onResolve，返回所有的fulfilled | onResolve，返回所有的fulfilled          |
-| fulfilled+rejected | onRejected，返回最早的rejected | onResolve，返回所有的fulfilled+rejected |
-| 全rejected          | onRejected，返回最早的rejected | onResolve，返回所有的rejected           |
+<table><thead><tr><th width="178.33333333333331">场景</th><th width="278">Promise.all()</th><th>Promise.allSettled()</th></tr></thead><tbody><tr><td>全fulfilled</td><td>onResolve，返回所有的fulfilled</td><td>onResolve，返回所有的fulfilled</td></tr><tr><td>fulfilled+rejected</td><td>onRejected，返回最早的rejected</td><td>onResolve，返回所有的fulfilled+rejected</td></tr><tr><td>全rejected</td><td>onRejected，返回最早的rejected</td><td>onResolve，返回所有的rejected</td></tr></tbody></table>
 
 ## 三、详解
 
