@@ -147,6 +147,7 @@
   * [Nginx](devops/nginx.md)
   * [Docker](devops/docker/README.md)
     * [核心概念](devops/docker/he-xin-gai-nian.md)
+    * [基础命令](devops/docker/ji-chu-ming-ling.md)
   * [K8s](devops/k8s.md)
   * [Linux](devops/linux/README.md)
     * [文件目录操作](devops/linux/wen-jian-mu-lu-cao-zuo.md)
