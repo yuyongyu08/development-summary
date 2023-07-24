@@ -1,7 +1,7 @@
 ---
 cover: >-
-  https://images.unsplash.com/photo-1688261433834-8ae224ef3416?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHJhbmRvbXx8fHx8fHx8fDE2OTAxODM0ODh8&ixlib=rb-4.0.3&q=85
-coverY: 0
+  https://images.unsplash.com/photo-1586348943529-beaae6c28db9?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw5fHxuYXR1cmV8ZW58MHx8fHwxNjkwMTgzNzA5fDA&ixlib=rb-4.0.3&q=85
+coverY: -60
 ---
 
 # 学海无涯
