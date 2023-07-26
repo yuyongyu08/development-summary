@@ -1,6 +1,6 @@
 ---
-description: context
+description: 跨级传递的props
 ---
 
-# context
+# Context
 

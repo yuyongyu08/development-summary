@@ -1,6 +1,6 @@
 ---
-description: effect
+description: 和外部系统沟通的通道
 ---
 
-# effect
+# Effect
 
