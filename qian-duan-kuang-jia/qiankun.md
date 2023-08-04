@@ -2,7 +2,7 @@
 description: qiankun原理
 ---
 
-# qiankun
+# Qiankun
 
 ### 一、主要原理
 
@@ -70,10 +70,30 @@ qiankun是对[single-spa](https://single-spa.js.org/)的封装，在其基础上
 
 
 
+### 六、实践中的注意点
+
+1.本地调试
+
+接入多个子应用时，将需要调试的那个子应用本地启动，接入链接设置成本地url，其他设置成dev环境。可以考虑用vite的env来管理接入链接。
+
+
+
+2.样式隔离
+
+自身提供的两种隔离方案（shadowDOM、类Scoped CSS），无法解决一些特定场景，比如一些第三方库将弹窗等挂载到子应用根结点外（一般都是body下），弹窗内的样式没法从架构层面做隔离。
+
+
+
+3.共享依赖
+
+比较难抽取，尤其是各个子应用依赖的同一个第三方资源的版本再有区别的话，更增加了资源抽离的难度
+
+
+
 参考：
 
 * [https://qiankun.umijs.org/zh](https://qiankun.umijs.org/zh)
 * [https://single-spa.js.org/](https://single-spa.js.org/)
-* [https://juejin.cn/post/7184419253087535165](https://juejin.cn/post/7184419253087535165)
+* 样式隔离问题：[https://juejin.cn/post/7184419253087535165](https://juejin.cn/post/7184419253087535165)
 * [https://juejin.cn/post/7197608023429922871](https://juejin.cn/post/7197608023429922871)
 * [https://juejin.cn/post/7148075486403362846](https://juejin.cn/post/7148075486403362846)
