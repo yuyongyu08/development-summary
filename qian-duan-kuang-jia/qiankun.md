@@ -22,7 +22,7 @@ qiankun是对[single-spa](https://single-spa.js.org/)的封装，在其基础上
 
 #### 1、子应用加载
 
-借助import-html-entry从子应用的首页解析出对应的资源进行请求，无需用户手动配置。
+借助import-html-entry从子应用的首页（可以理解成一个静态资源表）解析出对应的静态资源进行请求，无需用户手动配置。
 
 #### 2、JS隔离
 
