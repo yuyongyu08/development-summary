@@ -8,10 +8,10 @@
 
 ### 一、重要指标
 
-* 白屏时间：（FC，First Paint），
-* 首屏时间：（FCP，First Contentful Paint）
-* 可操作时间：DOMContentLoaded
-* 页面加载完成时间：window.onload
+* 白屏时间（FC，First Paint）
+* 首屏时间（FCP，First Contentful Paint）
+* 可操作时间（DOMContentLoaded）：DOM渲染完成，用户可操作
+* 页面加载完成时间（window.onload）
 
 
 
@@ -27,6 +27,7 @@
   * 静态资源压缩
 *   更快：
 
+    * 浏览器缓存
     * CDN加速
 
 
