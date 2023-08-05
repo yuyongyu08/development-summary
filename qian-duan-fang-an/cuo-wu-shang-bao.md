@@ -76,7 +76,7 @@ window.addEventListener("unhandledrejection", event => {
 
 **方法2:**
 
-使用`try...catch`包裹第三方代码
+如果第三方资源是通过JS动态加载的，使用`try...catch`包裹用于加载的代码块
 
 
 
