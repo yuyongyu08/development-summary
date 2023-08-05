@@ -34,8 +34,6 @@ description: HTTP2
 
 
 
-
-
 ## 三、HTTP/2有哪些改进？
 
 HTTP/1.1与HTTP/2的性能对比：[demo](https://http2.akamai.com/demo)
@@ -91,7 +89,7 @@ HTTP/2将消息划分为两个帧：HEADERS、DATA，并应二进制进行编码
 
 ### 4、服务端推送
 
-
+再也不需要额外增加webscoket协议了
 
 
 
