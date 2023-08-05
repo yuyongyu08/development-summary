@@ -40,7 +40,7 @@ Etag、Last-modified是http协议`响应字段`；If-None-Match、If-Modified-Si
 
 **4.no-cache和no-store区别？**
 
-> 答： no-cache是允许缓存，但每次请求忽略缓存； no-store直接不缓存
+> 答： no-cache**不使用**缓存（但允许对资源进行缓存）； no-store**不允许**缓存
 
 **5.协议缓存只用last-modified验证会有什么问题？**
 

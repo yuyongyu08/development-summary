@@ -25,7 +25,11 @@ description: 跨域解决方案
 * 动态脚本发起一个请求，参数是全局回调函数：?jsonpCallback=handleResponse
 * 服务端返回一个handleResponse(data)的字符串
 
+## 三、反向代理
 
+* 增加一个代理服务器（nginx）
+* 将所有的请求都代理到此服务器上
+* 此代理服务器内部做服务分发
 
 参考：
 

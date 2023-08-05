@@ -22,7 +22,7 @@ description: 浏览器输入一个url发生了什么
 
 <div align="left">
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>页面渲染流程</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>页面渲染流程</p></figcaption></figure>
 
 </div>
 
