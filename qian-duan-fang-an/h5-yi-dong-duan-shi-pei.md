@@ -45,9 +45,7 @@ postcss-pxtorem
 
 ### 总结：
 
-rem相比于vw方案最的优点：参照物可以修改。
-
-即rm可以人为改动根元素的font-size；vw方案无法改动设备的vw
+rem相比于vw方案的优点：参照物可以修改。即rm可以人为改动根元素的font-size；vw方案无法改动设备的vw
 
 
 
