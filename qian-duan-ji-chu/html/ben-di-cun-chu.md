@@ -57,7 +57,7 @@ Storage.clear();
 #### sessionStorage
 
 1. 页面会话在浏览器打开期间一直保持，并且重新加载或恢复页面仍会保持原来的页面会话。
-2. **在新标签或窗口打开一个页面时会**<mark style="color:red;">**复制**</mark>**顶级浏览会话的上下文作为新会话的上下文**
+2. **通过脚本，在新标签或窗口打开一个页面时会**<mark style="color:red;">**复制**</mark>**顶级浏览会话的上下文作为新会话的上下文**
 3. 打开多个相同的 URL 的 Tabs 页面，会创建各自的 `sessionStorage`。
 4. 关闭对应浏览器标签或窗口，会清除对应的 `sessionStorage`。
 
@@ -80,13 +80,17 @@ Storage.clear();
 
 * 通过window.open的方式跳转到子页面，子页面的控制台输出：`parent_1:123`
 
-第2步：点击父页面`新增sessionStorage`按钮，然后点击子页面的`获取新sessionStorage`按钮，
+第2步：点击父页面`新增sessionStorage`按钮，然后点击各个子页面的`获取新sessionStorage`按钮
 
-子页面的控制台输出：`parent_1:null`
+* 通过\<a>标签的方式跳转到子页面，子页面的控制台输出：`parent_2:null`
+* 通过window.open的方式跳转到子页面，子页面的控制台输出：`parent_2:456`
 
 
 
-**总结：通过window.open方式打开的子页面会复制父页面的`sessionStorage`，但父级页面后续更新的`sessionStorage`不再和子级页面共享同步**
+**总结：**
+
+* **通过\<a>标签方式打开的子页面和父级页面完全独立，`sessionStorage`始终不共享**
+* **通过window.open方式打开的子页面会复制父页面的`sessionStorage`，父级页面后续更新的`sessionStorage`和子级页面共享同步**
 
 
 
