@@ -56,10 +56,10 @@ Storage.clear();
 
 #### sessionStorage
 
-1. 页面会话在浏览器打开期间一直保持，并且重新加载或恢复页面仍会保持原来的页面会话。
+1. 页面会话在浏览器打开期间一直保持，并且重新加载或恢复页面仍会保持原来的页面会话
 2. **通过脚本，在新标签或窗口打开一个页面时会**<mark style="color:red;">**复制**</mark>**顶级浏览会话的上下文作为新会话的上下文**
-3. 打开多个相同的 URL 的 Tabs 页面，会创建各自的 `sessionStorage`。
-4. 关闭对应浏览器标签或窗口，会清除对应的 `sessionStorage`。
+3. 打开多个相同的 URL 的 Tabs 页面，会创建各自的 `sessionStorage`，和父级页面完全独立
+4. 关闭对应浏览器标签或窗口，会清除对应的 `sessionStorage`
 
 #### <mark style="color:red;">如何理解第2点？</mark>
 
