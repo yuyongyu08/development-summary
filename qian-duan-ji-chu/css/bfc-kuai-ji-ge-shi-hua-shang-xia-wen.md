@@ -12,10 +12,10 @@ BFC是一个独立的布局环境，可以理解为一个容器，在这个容�
 
 ### 常见形成条件
 
-* 元素左右浮动
+* 左右浮动
 * 绝对定位
-* display属性为table-cell、table-caption、inline-block
 * flex布局
+* display属性为table-cell、table-caption、inline-block
 * overflow属性不为visible.
 
 ### 特点
@@ -23,16 +23,10 @@ BFC是一个独立的布局环境，可以理解为一个容器，在这个容�
 * 相邻的两个BFC的margin不会重叠
 * BFC的高度包含内部浮动元素的高度
 
-
-
-### 作用
+### 应用
 
 * 解决margin折叠问题：将其中一个元素构造成BFC
 * 解决float元素父容器高度塌陷：将父元素构造成BFC
-
-
-
-
 
 
 
