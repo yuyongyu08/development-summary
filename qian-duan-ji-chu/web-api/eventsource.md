@@ -1,8 +1,10 @@
 ---
-description: HTTP协议中服务端的推送
+description: AI 打印机效果
 ---
 
 # EventSource
+
+HTTP协议中服务端的推送
 
 ## 服务端
 
@@ -53,7 +55,7 @@ http.createServer((req, res) => {
 console.log('Server running at http://localhost:3000/');
 ```
 
-关键点：`'Content-Type': 'text/event-stream'`
+**关键点**：<mark style="color:red;">`'Content-Type': 'text/event-stream'`</mark>
 
 ## 客户端
 

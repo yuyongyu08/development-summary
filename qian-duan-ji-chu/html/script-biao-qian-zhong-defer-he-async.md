@@ -4,7 +4,7 @@
 
 ### 概述
 
-async：异步下载，下载完立即执行（完全独立的脚本，DOM 和其他脚本不会等待它们，它们也不会等待其它的东西）
+async：异步下载，下载完立即执行（完全独立的脚本，DOM 和其他脚本不会等待它们，它们也不会等待其它的东西）。和脚步默认行为一致，即`<script>`标签上有没有async属性都一样，如上图所示。
 
 defer：异步下载，等页面解析完后再执行
 
@@ -58,7 +58,7 @@ document.addEventListener("readystatechange", () => {
   });
 ```
 
-tips：XMLHttpRequest中也有个`onreadystatechange`事件。
+tips：[XMLHttpRequest](../web-api/xmlhttprequest.md)中也有个`onreadystatechange`事件。
 
 
 

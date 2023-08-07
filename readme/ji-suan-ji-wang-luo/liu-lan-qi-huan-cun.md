@@ -4,10 +4,10 @@
 
 主要分为两部分：
 
-* **强制缓存**
+* **强制缓存（客户端验证）**
   * Expires
   * Cache-Control
-* **协议缓存**
+* **协议缓存（服务端验证）**
   * Etag/If-None-Match
   * Last-modified/If-Modified-Since
 
@@ -60,7 +60,7 @@ Etag、Last-modified是http协议`响应字段`；If-None-Match、If-Modified-Si
 
 **8.既然Etag能精准判断文件是否修改，为啥还要验证Last-Modified？**
 
-> 答：Etag 和 Last-Modified 是允许一起使用的，服务器会优先验证 Etag，在 Etag 一致的情况下，再去对比 Last-Modified，这是为了防止有一些 HTTP 服务器未将文件修改日期纳入哈希范围内
+> 答：Etag 和 Last-Modified 是允许一起使用的，服务器会优先验证 Etag，在 Etag 一致的情况下，再去对比 Last-Modified，这是为了防止有一些 HTTP 服务器未将文件修改日期纳入哈希范围内，导致缓存浪费
 
 ### 三、总结
 
