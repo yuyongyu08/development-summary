@@ -2,7 +2,7 @@
 
 ## 一、为啥要有箭头函数？
 
-* 更短的函数
+* 更短的函数声明
 * 不绑定this：确定this时不用像普通函数考虑因调用方式不同而导致this指向不同
 
 ## 二、箭头函数this指向谁？
@@ -20,7 +20,7 @@ window.age = 18;
 
 let obj = {
     name: 'yuyy',
-    say: ()=>{
+    say: () => {
         console.log('name: ', this.name);
         console.log('age: ', this.age);
     }
@@ -49,7 +49,7 @@ window.age = 18;
 let obj = {
     name: 'yuyy',
     say: function() {
-        return ()=>{
+        return () => {
             console.log('name: ', this.name);
             console.log('age: ', this.age);
         }
@@ -73,13 +73,13 @@ age:  undefined
 
 <mark style="color:red;">**重要！！！**</mark>
 
-如果箭头函数作用域外层是`函数`：则箭头函数this继承函数的this，`且`<mark style="color:red;">`外层函数的this改变，箭头函数的this也会改变`</mark>（可以理解为箭头函数的this在声明时和外层函数的this建立了引用关系）
+如果箭头函数作用域外层是`函数`：则箭头函数this继承函数的this，且<mark style="color:red;">外层函数的this改变，箭头函数的this也会改变</mark>（可以理解为箭头函数的this在声明时和外层函数的this建立了引用关系）
 
 ```javascript
 let obj = {
     name: 'yuyy',
     say: function() {
-        return ()=>{
+        return () => {
             console.log('name: ', this.name);
         }
     }
@@ -104,7 +104,7 @@ name:  rory
 
 解释：
 
-第二行输出是由于<mark style="color:red;">箭头函数的 this 继承自外层作用域，通过</mark> <mark style="color:red;"></mark><mark style="color:red;">`call()`</mark> <mark style="color:red;"></mark><mark style="color:red;"></mark> <mark style="color:red;"></mark>_<mark style="color:red;">或</mark>_ <mark style="color:red;"></mark><mark style="color:red;"></mark> <mark style="color:red;"></mark><mark style="color:red;">`apply()`</mark> <mark style="color:red;"></mark><mark style="color:red;">方法调用箭头函数时，只能传递函数所需参数，不能绑定 this</mark>，所以`call()` _或_ `apply()` 的第一个参数会被忽略
+第二行仍然输出yuyy是由于<mark style="color:red;">箭头函数的 this 继承自外层作用域，通过</mark> <mark style="color:red;"></mark><mark style="color:red;">`call()`</mark> _<mark style="color:red;">或</mark>_ <mark style="color:red;">`apply()`</mark> <mark style="color:red;"></mark><mark style="color:red;">方法调用箭头函数时，只能传递函数所需参数，不能绑定 this</mark>，所以`call()` _或_ `apply()` 的第一个参数会被忽略
 
 
 
@@ -160,7 +160,7 @@ Uncaught ReferenceError: arguments is not defined
 
 ### 箭头函数与普通函数的区别：
 
-1. this指向：在生命阶段就已确定
+1. this指向：在声明阶段就已确定
 2. 无原型对象
 3. 不能new
 4. 没有arguments

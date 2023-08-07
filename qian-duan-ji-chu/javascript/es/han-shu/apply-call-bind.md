@@ -12,7 +12,7 @@ description: apply、call、bind实现原理
 fn.apply(thisArg[, argsArray])
 ```
 
-注：有时候容易搞混apply和call的传参数到底谁接受的是数组，记忆小诀窍：apply和Array开头都是字母a，所以apply接受数组\
+注：有时候容易搞混apply和call的传参数到底谁接受的是数组，<mark style="color:red;">记忆小诀窍：apply和Array开头都是字母a，所以apply接受数组</mark>\
 
 
 #### **实现：**

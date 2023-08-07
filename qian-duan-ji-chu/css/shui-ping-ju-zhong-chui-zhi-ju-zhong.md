@@ -13,13 +13,13 @@
 
 {% embed url="https://codepen.io/yuyy/full/GRXvajY" %}
 
-方式2：left/top:50% + margin-left/margin-top: 宽/高一半
+方式2：绝对定位 + left/top:50% + margin-left/margin-top: 宽/高一半
 
 {% embed url="https://codepen.io/yuyy/full/XWPerMp" %}
 
 ### 2、子元素宽高不确定
 
-left/top + translate
+绝对定位 + left/top:50% + transform: translate(-50%)
 
 {% embed url="https://codepen.io/yuyy/full/rNZzgJy" %}
 

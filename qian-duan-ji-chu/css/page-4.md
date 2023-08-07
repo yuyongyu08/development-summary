@@ -10,7 +10,7 @@
 
 要点：
 
-* flex布局通过将一个元素设置display:flex，使它成为一个flex容器，它的所有子元素都会成为它的项目。
+* flex布局通过将一个元素设置display:flex，使它成为一个flex容器（BFC），它的所有子元素都会成为它的项目。
 * 一个容器有两条轴：水平的主轴+垂直主轴的交叉轴。
 * `flex-direction`用来指定主轴的方向。
 * `justify-content`用来指定项目在主轴上的排列方式；`align-items`用来指定项目在交叉轴上的排列方式。

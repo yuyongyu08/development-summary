@@ -10,7 +10,7 @@ Promise.resolve("fulfiled").then((value) => {
 
 ### 2、Promise.reject(reason)
 
-* 有onRejected时，不再执行catch
+* 有onRejected时，优先执行onRejected，不再执行catch
 
 ```javascript
 Promise.reject("fulfiled")

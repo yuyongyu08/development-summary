@@ -10,15 +10,35 @@
 
 
 
-
-
-
-
 ## 二、深拷贝
 
 ### 方式1：手动实现
 
-###
+```javascript
+function deepClone(source) {
+    if(!source) return;
+
+    let target = null;
+    switch (true){
+        case Array.isArray(source):
+            target = [];
+            source.forEach((item) => {
+                target.push(deepClone(item));
+            });
+            break;
+        case Object.getPrototypeOf(source) === Object.prototype:
+            target = {};
+            Object.keys(source).forEach((key) => {
+                target[key] = deepClone(source[key])
+            });
+            break;
+        default:
+            target = source;
+    }
+
+    return target
+}
+```
 
 ### 方式2：借助JSON
 

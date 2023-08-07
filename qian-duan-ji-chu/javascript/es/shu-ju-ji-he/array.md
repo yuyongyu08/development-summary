@@ -55,7 +55,7 @@
 
 * Array.prototype.push(item0\[, item1, ...])：newLen 【尾部追加】 <mark style="color:red;">`[改变原数组]`</mark>
 * Array.prototype.pop()：newLen 【删除最后一个元素】 <mark style="color:red;">`[改变原数组]`</mark>
-* Array.prototype.(item0\[, item1, ...])：newLen 【头部插入】 <mark style="color:red;">`[改变原数组]`</mark>
+* Array.prototype.unshift(item0\[, item1, ...])：newLen 【头部插入】 <mark style="color:red;">`[改变原数组]`</mark>
 * Array.prototype.shift()：【删除第一个元素】 <mark style="color:red;">`[改变原数组]`</mark>
 
 ### 8、转换

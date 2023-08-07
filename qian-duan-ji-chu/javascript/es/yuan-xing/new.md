@@ -96,8 +96,8 @@ console.log(p2); // Person2 { name: 'yuyy' }
 
 检测函数或构造方法是否是通过[new](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new)运算符被调用的
 
-* 有[new](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new)的构造函数调用：new ->&#x20;
 * 普通的函数调用：new -> undefined
+* 有[new](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/new)的构造函数调用：new -> 构造函数名
 
 ```javascript
 function Foo() {
