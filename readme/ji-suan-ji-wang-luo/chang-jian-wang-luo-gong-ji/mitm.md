@@ -8,7 +8,7 @@ description: 中间人攻击
 
 
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 中间人拦截客户端的请求，将自己的公钥返给客户端，同时伪装成客户端向服务器端索取公钥，之后客户端与服务器端的通信都会被中间人看到，甚至篡改。
 

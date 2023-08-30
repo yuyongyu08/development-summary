@@ -4,16 +4,48 @@ description: webpack
 
 # webpack
 
-核心部分：
+## 核心部分
 
-* entry
-* output
-* loader
-* plugin
+* Entry
+* Loader（真正干活的主力）
 
-函数注册在webpack的生命周期钩子上，在生成最终文件之前可以对编译的结果做一些特殊的处理，例如模块分包、插入html文件等功能
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+* Plugin（干预构建过程的钩子）
+* Output
 
 
+
+## 构建过程
+
+分为3个大的阶段：
+
+1. 初始化阶段：读取配置文件中的option参数，并做合并（merge）
+2. 编译构建阶段：
+   1. 从Entry出发，构建依赖图谱
+   2. 对于每一个Module（被依赖的文件），按照文件类型调用相应的Loader去编译文件内容
+   3. 串行处理每一个Module，递归地处理完所有依赖
+3. 输出阶段：对编译后的模块进行组合，生成chunk，并转换成文件，输出到Output指定的位置
+
+
+
+编译原理3阶段：
+
+* 解析阶段：生成AST
+* 转译阶段：将AST安装插件提供的规则转成目标产物
+* 生成阶段：将目标产物处理生成指定文件
+
+
+
+
+
+## 核心功能
+
+* code spliting
+* tree shaking
+* dev server
+* HMR
+* module federation（模块联邦，跨应用模块共享）&#x20;
 
 ## 打包优化
 

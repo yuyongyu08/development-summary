@@ -49,7 +49,7 @@ description: vite原理
 
 通过入口文件进行解析，遇到`import`，则会发送一个对应请求，开发服务器返回后继续递归找出其他依赖
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 对于资源的分情况处理：
 

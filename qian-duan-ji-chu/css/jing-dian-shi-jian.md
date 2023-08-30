@@ -45,7 +45,7 @@ box-orient + line-clamp
 img.offsetTop < window.innerHeight + document.body.scrollTop;
 ```
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
