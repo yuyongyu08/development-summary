@@ -1,8 +1,10 @@
 ---
-description: vite原理
+description: 前端工程化的新贵
 ---
 
 # vite
+
+
 
 > 以下截图来自于以官方[ Quick Start](https://vuejs.org/guide/quick-start.html#creating-a-vue-application) 的demo
 
