@@ -1,5 +1,5 @@
 ---
-description: webpack
+description: 模块打包器-前端工程化里程碑式的工具
 ---
 
 # webpack
