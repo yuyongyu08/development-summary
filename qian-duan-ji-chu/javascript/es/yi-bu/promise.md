@@ -11,7 +11,7 @@
 * Promise.**resolve**(value)
 * Promise.**reject**(reason)
 
-### 2、原型方法：
+### 2、实例方法：
 
 * Promise.prototype.**then**(onResolved, onRejected)
 * Promise.prototype.**catch**(onRejected)
