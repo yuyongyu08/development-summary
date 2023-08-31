@@ -120,6 +120,7 @@
 * [服务端](fu-wu-duan/README.md)
   * [Redis](fu-wu-duan/redis.md)
   * [Node.js](fu-wu-duan/node.js.md)
+    * [核心](fu-wu-duan/node.js/he-xin.md)
     * [进程守护](fu-wu-duan/jin-cheng-shou-hu.md)
   * [Java](fu-wu-duan/java/README.md)
     * [安装与配置](fu-wu-duan/java/an-zhuang-yu-pei-zhi.md)

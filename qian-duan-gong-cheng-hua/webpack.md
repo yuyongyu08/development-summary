@@ -9,7 +9,7 @@ description: 模块打包器-前端工程化里程碑式的工具
 * Entry
 * Loader（真正干活的主力）
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Plugin（干预构建过程的钩子）
 * Output
