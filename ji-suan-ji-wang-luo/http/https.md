@@ -14,7 +14,7 @@ HTTPS = HTTP + TLS/SSL
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/https.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/https.png" alt=""><figcaption><p>SSL处于HTTP和TCP中间</p></figcaption></figure>
 
 </div>
 
@@ -24,7 +24,7 @@ HTTPS = HTTP + TLS/SSL
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/https-flow.png" alt=""><figcaption><p>通信流程</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/https-flow.png" alt=""><figcaption><p>通信流程</p></figcaption></figure>
 
 </div>
 
@@ -45,7 +45,7 @@ HTTPS = HTTP + TLS/SSL
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/MITM.png" alt=""><figcaption><p>中间人攻击</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/MITM.png" alt=""><figcaption><p>中间人攻击</p></figcaption></figure>
 
 </div>
 
@@ -61,7 +61,7 @@ HTTPS = HTTP + TLS/SSL
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>数字证书的组成</p></figcaption></figure>
 
 </div>
 
@@ -73,17 +73,9 @@ HTTPS = HTTP + TLS/SSL
 >
 > 第2步：再用**第三方机构私钥**对MD5的结果加密**（**<mark style="color:red;">**防止中间人攻击的关键**</mark>**）**
 
-5. **证书中为什么一定要有数字签名？**
+5. **数字签名如何做到防止中间人攻击的？**
 
-> 答：防止服务端的公钥被篡改。
->
-> 如何做到防止被篡改的呢？因为中间人是没办法拿到第三方机构的私钥，所以就没办法伪造数字签名，假如伪造一个假的数字签名发给客户端，客户端用第三方机构的公钥也解密不了。
-
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/no-signature.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+> 答：因为中间人是没办法拿到第三方机构的私钥，所以就没办法伪造数字签名，假如伪造一个假的数字签名发给客户端，客户端用第三方机构的公钥也解密不了。
 
 6. 客户端如何验证证书有效性的？
 

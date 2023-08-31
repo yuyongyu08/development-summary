@@ -8,11 +8,11 @@ description: 浏览器输入一个url发生了什么
 
 1. **浏览器请求发送前**
 
-&#x20;      [强缓存](../../readme/ji-suan-ji-wang-luo/liu-lan-qi-huan-cun.md#yi-huan-cun-ji-zhi)检查 => DNS解析 => TCP连接 => TLS连接
+&#x20;      [强缓存](../../ji-suan-ji-wang-luo/liu-lan-qi-huan-cun.md#yi-huan-cun-ji-zhi)检查 => DNS解析 => TCP连接 => TLS连接
 
 2. **服务器处理数据**
 
-&#x20;      [协议缓存](../../readme/ji-suan-ji-wang-luo/liu-lan-qi-huan-cun.md#yi-huan-cun-ji-zhi) => 业务逻辑计算 => 响应结果
+&#x20;      [协议缓存](../../ji-suan-ji-wang-luo/liu-lan-qi-huan-cun.md#yi-huan-cun-ji-zhi) => 业务逻辑计算 => 响应结果
 
 3. **浏览器渲染页面**
 

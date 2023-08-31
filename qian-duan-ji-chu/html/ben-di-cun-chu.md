@@ -27,7 +27,7 @@ cookie的出现主要是解决http无状态带来的一些问题
    * 正数：n秒后失效
 5. secure：只能被 HTTPS 协议加密过的请求发送给服务端
 6. httpOnly：拒绝http携带之外的方式访问，比如通过JavaScript脚本无法访问
-7. sameSite：请求的url和当前页面url不一致时是否允许携带cookie，防止[CSRF](../../readme/ji-suan-ji-wang-luo/chang-jian-wang-luo-gong-ji/csrf.md)攻击
+7. sameSite：请求的url和当前页面url不一致时是否允许携带cookie，防止[CSRF](../../ji-suan-ji-wang-luo/chang-jian-wang-luo-gong-ji/csrf.md)攻击
 
 
 
