@@ -2,7 +2,7 @@
 
 ## 一、关系
 
-any是对race的补充：尽可能等一个fulfilled的结果
+any是对race的补充：<mark style="color:red;">尽可能等一个fulfilled的结果</mark>
 
 ## 二、区别
 

@@ -2,7 +2,7 @@
 
 ## 一、关系
 
-allSettled是对all的补充：始终执行onResolve，rejected的结果也一并返回
+allSettled是对all的补充：<mark style="color:red;">始终执行onResolve</mark>，rejected的结果也一并返回
 
 
 

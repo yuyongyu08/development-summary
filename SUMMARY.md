@@ -62,6 +62,7 @@
           * [race和any](qian-duan-ji-chu/javascript/es/yi-bu/promise/race-he-any.md)
           * [resolve和reject](qian-duan-ji-chu/javascript/es/yi-bu/promise/resolve-he-reject.md)
       * [模块化](qian-duan-ji-chu/javascript/es/mo-kuai-hua.md)
+      * [版本特性一览表](qian-duan-ji-chu/javascript/es/ban-ben-te-xing-yi-lan-biao.md)
     * [DOM](qian-duan-ji-chu/javascript/dom/README.md)
       * [DOM事件](qian-duan-ji-chu/javascript/dom/dom-shi-jian.md)
       * [事件分类](qian-duan-ji-chu/javascript/dom/shi-jian-fen-lei.md)
