@@ -8,7 +8,7 @@ description: koa
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/UML 图.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/UML 图.jpg" alt=""><figcaption></figcaption></figure>
 
 </div>
 
