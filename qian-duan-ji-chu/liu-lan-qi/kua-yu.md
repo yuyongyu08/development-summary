@@ -6,7 +6,7 @@ description: 跨域解决方案
 
 ## 同源策略
 
-协议+域名+端口有一个不同，则跨域
+<mark style="color:green;">**协议+域名+端口**</mark>，有一个不同，则跨域
 
 > 注意：http和https属于不同协议，所以也会跨域
 
@@ -20,6 +20,10 @@ description: 跨域解决方案
 * 是否允许携带cookie：Access-Control-Allow-<mark style="color:red;">Credentials</mark>
 
 ## 二、JSONP
+
+核心：利用\<script>的请求没有跨域限制
+
+步骤：
 
 * 声明一个全局回调函数handleResponse(data)
 * 动态脚本发起一个请求，参数是全局回调函数：?jsonpCallback=handleResponse
