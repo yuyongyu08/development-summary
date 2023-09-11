@@ -14,15 +14,15 @@ description: react的逃生舱
 
 setup函数包含两部分：
 
-* 函数体：组件挂载（插入到DOM中）时调用
-* 清除函数（可选）：组件卸载（从DOM中移除）时调用，主要用于清除遗留逻辑，比如清除定时器、断开服务器连接等
+* **setup** code：组件挂载（插入到DOM中）时调用
+* **cleanup** code（可选）：组件卸载（从DOM中移除）时调用，主要用于清除遗留逻辑，比如清除定时器、断开服务器连接等
 
 执行顺序：
 
-* 开发模式下首次渲染：setup => cleanup => setup
-* 生产模式下首次渲染：setup
-* 每次重新渲染：cleanup（旧值） => setup（新值）
-* 组件卸载（unmount）：cleanup
+* 首次挂载（开发模式）：setup => cleanup => setup
+* 首次挂载（生产模式）：setup
+* 重新渲染：cleanup（旧值） => setup（新值）
+* 组件卸载：cleanup
 
 > After every re-render with changed dependencies, React will first run the cleanup function (if you provided it) with the old values, and then run your setup function with the new values.
 
