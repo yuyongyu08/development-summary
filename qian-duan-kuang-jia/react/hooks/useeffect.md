@@ -19,14 +19,15 @@ setup函数包含两部分：
 
 执行顺序：
 
-每次重新渲染，先用旧值执行cleanup函数，然后用新值执行setup函数
+* 开发模式下首次渲染：setup => cleanup => setup
+* 生产模式下首次渲染：setup
+* 每次重新渲染：cleanup（旧值） => setup（新值）
 
 > After every re-render with changed dependencies, React will first run the cleanup function (if you provided it) with the old values, and then run your setup function with the new values.
 
 ### 示例
 
-```jsx
-import { useEffect } from 'react';
+<pre class="language-jsx"><code class="lang-jsx">import { useEffect } from 'react';
 import { createConnection } from './chat.js';
 
 function ChatRoom({ roomId }) {
@@ -36,14 +37,28 @@ function ChatRoom({ roomId }) {
     const connection = createConnection(serverUrl, roomId);
     connection.connect();
     return () => {
-      connection.disconnect();
-    };
+<strong>      connection.disconnect();
+</strong>    };
   }, [serverUrl, roomId]);
   // ...
 }
-```
+</code></pre>
 
 
 
 ### 关键点
+
+* 只可在组件顶层执行，不可放到循环或条件中
+* 如果不和外部系统通信，没必要使用Effect
+* 使用`useLayoutEffect`代替：（没理解～）
+
+> If your Effect wasn’t caused by an interaction (like a click), React will let the browser **paint the updated screen first before running your Effect.** If your Effect is doing something visual (for example, positioning a tooltip), and the delay is noticeable (for example, it flickers), replace `useEffect` with [`useLayoutEffect`.](https://react.dev/reference/react/useLayoutEffect)
+
+
+
+> Even if your Effect was caused by an interaction (like a click), **the browser may repaint the screen before processing the state updates inside your Effect.** Usually, that’s what you want. However, if you must block the browser from repainting the screen, you need to replace `useEffect` with [`useLayoutEffect`.](https://react.dev/reference/react/useLayoutEffect)
+
+
+
+
 
