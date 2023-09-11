@@ -22,6 +22,7 @@ setup函数包含两部分：
 * 开发模式下首次渲染：setup => cleanup => setup
 * 生产模式下首次渲染：setup
 * 每次重新渲染：cleanup（旧值） => setup（新值）
+* 组件卸载（unmount）：cleanup
 
 > After every re-render with changed dependencies, React will first run the cleanup function (if you provided it) with the old values, and then run your setup function with the new values.
 
