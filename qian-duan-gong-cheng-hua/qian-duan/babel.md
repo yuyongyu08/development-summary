@@ -1,0 +1,15 @@
+---
+description: babel
+---
+
+# babel
+
+参考：
+
+* [https://juejin.cn/post/6844903956905197576?searchId=202310250832280CC9A4D3F9EA5879A889](https://juejin.cn/post/6844903956905197576?searchId=202310250832280CC9A4D3F9EA5879A889)
+* [https://juejin.cn/post/6844903760603398151?searchId=202310250832280CC9A4D3F9EA5879A889](https://juejin.cn/post/6844903760603398151?searchId=202310250832280CC9A4D3F9EA5879A889)
+* [https://juejin.cn/post/6844904199554072583?searchId=202310250832280CC9A4D3F9EA5879A889](https://juejin.cn/post/6844904199554072583?searchId=202310250832280CC9A4D3F9EA5879A889)
+* [https://juejin.cn/post/7284144079716728873?searchId=202310250832280CC9A4D3F9EA5879A889](https://juejin.cn/post/7284144079716728873?searchId=202310250832280CC9A4D3F9EA5879A889)
+* [https://www.zhihu.com/question/315934143/answer/2358619334](https://www.zhihu.com/question/315934143/answer/2358619334)
+* [http://smartzheng.site/post/babel%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0/](http://smartzheng.site/post/babel%E7%9A%84%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E7%8E%B0/)
+
