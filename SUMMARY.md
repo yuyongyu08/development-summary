@@ -115,6 +115,7 @@
   * [H5移动端适配](qian-duan-fang-an/h5-yi-dong-duan-shi-pei.md)
 * [工程化](qian-duan-gong-cheng-hua/README.md)
   * [前端](qian-duan-gong-cheng-hua/qian-duan/README.md)
+    * [防止package-lock.json删除](qian-duan-gong-cheng-hua/qian-duan/fang-zhi-packagelock.json-shan-chu.md)
     * [打包ESM和CommonJS](qian-duan-gong-cheng-hua/qian-duan/da-bao-esm-he-commonjs.md)
     * [babel](qian-duan-gong-cheng-hua/qian-duan/babel.md)
     * [webpack](qian-duan-gong-cheng-hua/webpack.md)
