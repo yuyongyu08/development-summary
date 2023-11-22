@@ -146,6 +146,7 @@
     * [基础命令](devops/docker/ji-chu-ming-ling.md)
   * [K8s](devops/k8s.md)
   * [Linux](devops/linux/README.md)
+    * [shell及脚本](devops/linux/shell-ji-jiao-ben.md)
     * [文件目录操作](devops/linux/wen-jian-mu-lu-cao-zuo.md)
     * [vi/vim](devops/linux/vi-vim.md)
 * [计算机基础](<README (1).md>)
